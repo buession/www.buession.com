@@ -8,7 +8,7 @@
 
 ### 快速开始
 
-* [快速入门](quickstart.md)
+* [快速入门](../quickstart.md)
 * [版本说明](version.md)
 * [安装](installation.md)
   * [环境要求](requirement.md)

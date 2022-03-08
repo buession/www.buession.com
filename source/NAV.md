@@ -1,9 +1,10 @@
 # YDoc
 ![logo](ydoc/images/dog@1x.png)
 
-* [主页](/)
+* [主页](https://wwww.buession.com/)
 * [快速上手](/docs/quickstart.html)
 * [文档](/docs/installation.html)
+* [技术支持](/support.html)
 ## 生态
   * [Buession Framework](https://wwww.buession.com/)
   * [Buession Security](https://security.buession.com/)
