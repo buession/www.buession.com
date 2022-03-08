@@ -22,7 +22,7 @@ jobs:
       - name: 2. install dep
         run: |
           rm -rf node_modules
-          npm install ydoc
+          npm install ydoc -g
           yarn --frozen-lockfile
           ydoc build
         env:
