@@ -34,7 +34,8 @@ fi
 echo "DEPLOY_ACCESS_TOKEN: ${DEPLOY_ACCESS_TOKEN}"
 # 配置ssh
 if [ -n "${DEPLOY_ACCESS_TOKEN}" ]; then
-    echo "设置 DEPLOY_ACCESS_TOKEN"
+    print_info "设置 DEPLOY ACCES TOKEN"
+
     SSH_DIR="${HOME}/.ssh"
     mkdir "${SSH_DIR}"
     ssh-keyscan -t rsa github.com >"${SSH_DIR}/known_hosts"
