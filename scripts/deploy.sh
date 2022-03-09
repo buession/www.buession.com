@@ -31,6 +31,7 @@ if [ -n "${CNAME}" ]; then
     echo "${CNAME}" > CNAME
 fi
 
+echo "DEPLOY_ACCESS_TOKEN: ${DEPLOY_ACCESS_TOKEN}"
 # 配置ssh
 if [ -n "${DEPLOY_ACCESS_TOKEN}" ]; then
     echo "设置 DEPLOY_ACCESS_TOKEN"
