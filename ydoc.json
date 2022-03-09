@@ -4,6 +4,5 @@
   "description": "基于各开源框架的二次开发和封装",
   "author": "buession",
   "theme": "demo",
-  "root": "source",
-  "dist": "docs"
+  "root": "src"
 }
