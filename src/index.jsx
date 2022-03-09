@@ -3,7 +3,7 @@ banner:
   name: '基于各开源框架的二次开发和封装。'
   desc: '基于各开源框架的二次开发和封装。'
   btns: 
-    - { name: '开 始', href: './quickstart.html', primary: true }
+    - { name: '开 始', href: '/docs/quickstart.html', primary: true }
     - { name: 'Github >', href: 'https://github.com/buession/buessionframework' }
   caption: '当前版本: v2.0.0'
 features: 
