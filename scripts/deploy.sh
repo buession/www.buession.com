@@ -34,7 +34,9 @@ function print_info() {
     echo -e "\e[36mINFO: ${1}\e[m"
 }
 
-echo "DEPLOY_ACCESS_TOKEN: ${DEPLOY_ACCESS_TOKEN}"
+echo "PUBLISH_BRANCH: ${PUBLISH_BRANCH}"
+echo "GITHUB_ACTOR: ${GITHUB_ACTOR}"
+echo "ACCESS_TOKEN_DEPLOY: ${ACCESS_TOKEN_DEPLOY}"
 exit 0
 
 # 配置ssh
