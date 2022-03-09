@@ -34,6 +34,9 @@ function print_info() {
     echo -e "\e[36mINFO: ${1}\e[m"
 }
 
+echo "GITHUB_REPOSITORY: ${GITHUB_REPOSITORY}"
+exit 0
+
 # 配置ssh
 if [ -n "${DEPLOY_ACCESS_TOKEN}" ]; then
     echo "设置 DEPLOY_ACCESS_TOKEN"
