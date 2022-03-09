@@ -34,11 +34,6 @@ function print_info() {
     echo -e "\e[36mINFO: ${1}\e[m"
 }
 
-echo "PUBLISH_BRANCH: ${PUBLISH_BRANCH}"
-echo "GITHUB_ACTOR: ${GITHUB_ACTOR}"
-echo "DEPLOY_ACCESS_TOKEN: ${DEPLOY_ACCESS_TOKEN}"
-exit 0
-
 # 配置ssh
 if [ -n "${DEPLOY_ACCESS_TOKEN}" ]; then
     echo "设置 DEPLOY_ACCESS_TOKEN"
@@ -54,8 +49,8 @@ fi
 git init
 git checkout --orphan "${PUBLISH_BRANCH}" # 积累无数次commit，不算分支
 
-git config user.name "${GIT_AUTHOR_NAME}"
-git config user.email "${GIT_AUTHOR_EMAIL}"
+git config user.name "${GITHUB_ACTOR}"
+git config user.email "${GITHUB_ACTOR}@buession.com"
 
 git remote rm origin || true
 git remote add origin "${GIT_REPOSITORY_URL}"
@@ -63,12 +58,12 @@ git remote add origin "${GIT_REPOSITORY_URL}"
 # 更改时间
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
-push_time="$(date '+%Y-%m-%d %H:%M:%S')"
+pushlist_time="$(date '+%Y-%m-%d %H:%M:%S')"
 
 # git提交
 git add .
-git commit -m "【部署】：${push_time}"
+git commit -m "【部署】：${pushlist_time}"
 
 git push origin -f "${PUBLISH_BRANCH}"
 
-print_info "${GITHUB_SHA} 部署成功： ${push_time}"
+print_info "${GITHUB_SHA} 部署成功： ${pushlist_time}"
