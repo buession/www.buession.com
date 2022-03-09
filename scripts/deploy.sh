@@ -1,6 +1,14 @@
 # !/bin/bash
 set -e
 
+function print_error() {
+    echo -e "\e[31mERROR: ${1}\e[m"
+}
+
+function print_info() {
+    echo -e "\e[36mINFO: ${1}\e[m"
+}
+
 # 检查Actions目录配置
 if [ -z "${PUBLISH_DIR}" ]; then
     echo "【致命错误】：workflows尚未设置 PUBLISH_DIR"
@@ -24,15 +32,7 @@ cd "${PUBLISH_DIR}" # ./_site
 # 设置CNAME
 if [ -n "${CNAME}" ]; then 
     echo "${CNAME}" > CNAME
-fi 
-
-function print_error() {
-    echo -e "\e[31mERROR: ${1}\e[m"
-}
-
-function print_info() {
-    echo -e "\e[36mINFO: ${1}\e[m"
-}
+fi
 
 # 配置ssh
 if [ -n "${DEPLOY_ACCESS_TOKEN}" ]; then
@@ -55,7 +55,7 @@ git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 git remote rm origin || true
 git remote add origin "${GIT_REPOSITORY_URL}"
 
-# 更改时间
+# 更改时区
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 pushlist_time="$(date '+%Y-%m-%d %H:%M:%S')"
