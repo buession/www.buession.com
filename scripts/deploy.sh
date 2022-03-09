@@ -34,7 +34,7 @@ function print_info() {
     echo -e "\e[36mINFO: ${1}\e[m"
 }
 
-echo "GITHUB_REPOSITORY: ${GITHUB_REPOSITORY}"
+echo "DEPLOY_ACCESS_TOKEN: ${DEPLOY_ACCESS_TOKEN}"
 exit 0
 
 # 配置ssh
@@ -45,7 +45,7 @@ if [ -n "${DEPLOY_ACCESS_TOKEN}" ]; then
     ssh-keyscan -t rsa github.com >"${SSH_DIR}/known_hosts"
     echo "${DEPLOY_ACCESS_TOKEN}" >"${SSH_DIR}/id_rsa"
     chmod 400 "${SSH_DIR}/id_rsa"
-    GIT_REPOSITORY_URL="git@github.com:${GIT_REPOSITORY_NAME}.git"
+    GIT_REPOSITORY_URL="git@github.com:${GITHUB_REPOSITORY}.git"
 fi
 
 # 配置git
