@@ -66,4 +66,4 @@ git commit -m "【部署】：${pushlist_time}"
 
 git push origin -f "${PUBLISH_BRANCH}"
 
-print_info "${GITHUB_SHA} 部署成功： ${pushlist_time}"
+print_info "${GITHUB_SHA} 部署成功：${pushlist_time}"
