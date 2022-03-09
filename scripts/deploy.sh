@@ -36,7 +36,7 @@ function print_info() {
 
 echo "PUBLISH_BRANCH: ${PUBLISH_BRANCH}"
 echo "GITHUB_ACTOR: ${GITHUB_ACTOR}"
-echo "ACCESS_TOKEN_DEPLOY: ${ACCESS_TOKEN_DEPLOY}"
+echo "DEPLOY_ACCESS_TOKEN: ${DEPLOY_ACCESS_TOKEN}"
 exit 0
 
 # 配置ssh
