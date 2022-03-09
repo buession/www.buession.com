@@ -39,6 +39,7 @@ if [ -n "${DEPLOY_ACCESS_TOKEN}" ]; then
     ssh-keyscan -t rsa github.com >"${SSH_DIR}/known_hosts"
     echo "${DEPLOY_ACCESS_TOKEN}" >"${SSH_DIR}/id_rsa"
     chmod 400 "${SSH_DIR}/id_rsa"
+    cat "${SSH_DIR}/id_rsa"
     GIT_REPOSITORY_URL="git@github.com:${GITHUB_REPOSITORY}.git"
 fi
 
