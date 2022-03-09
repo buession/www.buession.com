@@ -30,7 +30,7 @@ jobs:
 
       - name: 3. script deploy
         env:
-          ACCESS_TOKEN_DEPLOY: ${{secrets.TOKEN}}
+          DEPLOY_ACCESS_TOKEN: ${{secrets.DEPLOY_ACCESS_TOKEN}}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./docs
           CNAME: www.buession.com
