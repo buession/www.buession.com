@@ -1,5 +1,5 @@
 # YDoc
-![logo](ydoc/images/dog@1x.png)
+![logo](ydoc/images/logo.png)
 
 * [主页](https://wwww.buession.com/)
 * [快速上手](/docs/quickstart.md)

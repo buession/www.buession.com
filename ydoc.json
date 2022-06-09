@@ -4,5 +4,10 @@
   "description": "基于各开源框架的二次开发和封装",
   "author": "buession",
   "theme": "demo",
-  "root": "src"
+  "root": "src",
+  "pluginsConfig": {
+    "import-asset": {
+      "js": ["/js/stat.js"]
+    }
+  }
 }
