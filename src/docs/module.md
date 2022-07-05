@@ -1,7 +1,7 @@
 ### buession-aop
 * AOP 封装，方便实现基于 aspectj 的自定义注解
 
-### buession-aop
+### buession-bean
 * Spring Bean 工具类封装、转换
 
 ### buession-core

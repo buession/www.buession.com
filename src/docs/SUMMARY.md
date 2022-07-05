@@ -13,11 +13,3 @@
 * [安装](installation.md)
   * [环境要求](requirement.md)
   * [安装及使用](installation.md)
-
-### API 手册
-
-* [简介](installation.md)
-* [概览](installation.md)
-* [参考指南](guide.md)
-
-### 升级

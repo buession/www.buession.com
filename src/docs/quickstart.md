@@ -6,7 +6,7 @@ Buession Framework 是基于 springfrawork、jsckson、jedis、apache httpcompon
 
 同时，提供了众多常用的类库、方法、注解。
 
-Buession Framework 还在引用三方类库时，保证了版本的一致性。
+Buession Framework 还在引用三方类库时，确保了版本的一致性，避免在不用三方类库引用的同一个三方类库版本不一致的情况。
 
 
 您可以根据本文档中的示例，快速熟悉 Buession Framework 的使用方法。
@@ -14,6 +14,6 @@ Buession Framework 还在引用三方类库时，保证了版本的一致性。
 
 ### 下一步可做什么？
 您对 Buession Framework 大致了解后，您接下来可以做以下事情：
-* [了解兼容性](/docs/requirement.html#支持环境)：了解 Buession Framework 的兼容性
+* [了解兼容性](/docs/requirement.html#环境要求)：了解 Buession Framework 的兼容性
 * [安装](/docs/installation.html)：安装/引用 Buession Framework
 * [使用](/manual/)：开始使用 Buession Framework 功能
