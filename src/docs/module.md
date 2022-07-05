@@ -1,8 +1,8 @@
 ### buession-aop
 * AOP 封装，方便实现基于 aspectj 的自定义注解
 
-### buession-bean
-* Spring Bean 工具类封装、转换
+### buession-beans
+* Bean 工具类封
 
 ### buession-core
 * 一些继承 apache lang3、apache collections4 的对字符串、集合、List、Map、Class、Object、Enum、Number等工具类封装和扩展
