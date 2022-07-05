@@ -4,7 +4,7 @@
 * [参考指南](overview.md)
   * [2.0.x](2.0/index.md)
     * [buession-aop](aop/index.md)
-    * [buession-bean](bean/index.md)
+    * [buession-beans](beans/index.md)
     * [buession-core](core/index.md)
     * [buession-cron](cron/index.md)
     * [buession-dao](dao/index.md)
