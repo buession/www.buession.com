@@ -100,4 +100,7 @@ Map、Set、Queue 同理。
 | <K, V> Map<K, V> MapBuilder.of(V value)  | 创建仅有一个元素的 Key 为 K 类型，值为 V 类型的 Map 对象 |
 
 
+empty 与 java.util.Collections.emptyList()、java.util.Collections.emptySet()、java.util.Collections.emptyMap() 的本质区别是返回的 List 实例不同，该方法创建的 List、Set、Map 实例是允许对 List、Set、Map 做操作，而 java.util.Collections.emptyXXX() 则是不允许的。两个 of 方法均同理。
+
+
 ## [API 参考手册>>](/manual/2.0/docs/buession-core/com/buession/core/builder/package-summary.html)
