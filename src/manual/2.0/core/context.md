@@ -9,3 +9,70 @@
 * 逻辑少
 * 与 Dao 层进行交互，多个 Dao 层的复用
 * Service 通用底层逻辑的下沉，如：缓存方案、中间件通用处理、以及对第三方平台封装的层
+
+```java
+import com.buession.core.context.stereotype.Manager;
+import org.springframework.stereotype.Service;
+
+public interface UserManager {
+
+	User getByPrimary(int id);
+
+}
+
+@Manager
+public class UserManagerImpl implements UserManager {
+
+	@Autowired
+	private UserDao userDao;
+
+	@Autowired
+	private UserProfileDao userProfileDao;
+
+	@Autowired
+	private RedisTemplate redisTemplate;
+
+
+	@Override
+	public User getByPrimary(int id){
+		User user = redisTemplate.hGetObject("user", Integer.toString(id), User.class);
+
+		if(user == null){
+			user = userDao.getByPrimary(id);
+			if(user != null){
+				user.setProfile(userProfileDao.getByUserId(id));
+				redisTemplate.hSet("user", Integer.toString(id), user);
+			}else{
+				throw new RuntimeException("用户不存在");
+			}
+		}
+
+		return user;
+	}
+
+}
+
+public interface UserService {
+
+	User getByPrimary(int id);
+
+}
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	@Autowired
+	private UserManager userManager;
+
+
+	@Override
+	public User getByPrimary(int id){
+		User user = userManager.getByPrimary(id);
+
+		...
+
+		return user;
+	}
+
+}
+```
