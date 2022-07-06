@@ -102,3 +102,128 @@ String[] result = Arrays.map(array, String.class, fn);
 ```
 
 第二个参数为数组元素类型，第三个参数为 `java.util.function.Function` 的实现
+
+
+### **Lists**
+
+List 工具类 `Lists` 实现了将元素拼接成字符串、转换为 Set 操作。
+
+
+将字符串拼接会字符串：
+
+```java
+import com.buession.core.collect.Lists;
+import com.buession.core.builder.ListBuilder;
+
+List<Integer> list = ListBuilder.<Integer>create().add(1).add(2).add(3).build();
+String result = Lists.toString(list);
+// 1, 2, 3
+```
+
+可以通过参数 `glue` 指定连接符，默认为：`", "`
+
+```java
+import com.buession.core.collect.Lists;
+import com.buession.core.builder.ListBuilder;
+
+List<Integer> list = ListBuilder.<Integer>create().add(1).add(2).add(3).build();
+String glue = "-";
+String result = Lists.toString(list);
+// 1-2-3
+```
+
+
+可以通过方法 toSet 将 List 转换为 Set：
+
+```java
+import com.buession.core.collect.Lists;
+import com.buession.core.builder.ListBuilder;
+import java.util.List;
+import java.util.Set;
+
+List<Integer> list = ListBuilder.<Integer>create().add(1).add(2).add(3).build();
+Set<Integer> set = Lists.toSet(list);
+```
+
+
+### **Sets**
+
+Sett 工具类 `Sets` 实现了将元素拼接成字符串、转换为 List 操作。
+
+
+将字符串拼接会字符串：
+
+```java
+import com.buession.core.collect.Sets;
+import com.buession.core.builder.SetBuilder;
+
+Set<Integer> set = SetBuilder.<Integer>create().add(1).add(2).add(3).build();
+String result = Sets.toString(set);
+// 1, 2, 3
+```
+
+可以通过参数 `glue` 指定连接符，默认为：`", "`
+
+```java
+import com.buession.core.collect.Sets;
+import com.buession.core.builder.SetBuilder;
+
+Set<Integer> set = SetBuilder.<Integer>create().add(1).add(2).add(3).build();
+String glue = "-";
+String result = Sets.toString(list);
+// 1-2-3
+```
+
+
+可以通过方法 toList 将 Set 转换为 List：
+
+```java
+import com.buession.core.collect.Lists;
+import com.buession.core.builder.ListBuilder;
+import java.util.List;
+import java.util.Set;
+
+Set<Integer> set = SetBuilder.<Integer>create().add(1).add(2).add(3).build();
+List<Integer> list = Sets.toList(set);
+```
+
+
+### **Maps**
+
+Map 工具类 `Maps` 实现了对 key 和 value 进行操作，实现了将 value 转换为 List 和 Set。
+
+
+对 Map 进行操作：
+
+```java
+import com.buession.core.collect.Maps;
+import java.util.Map;
+import java.util.HashMap;
+
+Map<String, Object> maps = new HashMap<>();
+Map<String, String> result = Maps.map(maps, (key)->key, (value)->value == null ? null : value.toString());
+```
+
+第二个、第三参数为 `java.util.function.Function` 的实现
+
+
+可以通过方法 toList 将 Map 的 value 转换为 List：
+
+```java
+import com.buession.core.collect.Maps;
+import com.buession.core.builder.ListBuilder;
+import java.util.List;
+
+List<T> list = Maps.toList(maps);
+```
+
+
+可以通过方法 toList 将 Map 的 value 转换为 Set：
+
+```java
+import com.buession.core.collect.Maps;
+import com.buession.core.builder.ListBuilder;
+import java.util.Set;
+
+Set<T> list = Maps.toSet(maps);
+```
