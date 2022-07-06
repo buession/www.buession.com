@@ -50,3 +50,29 @@ public UserServiceImpl implements UserService {
 
 }
 ```
+
+
+您可以自定义错误代码和错误消息的 key，默认分别为：code、message。此时您需要在注解 `@Message` 上显示指定错误代码和错误消息的 key。
+
+```java
+import com.buession.core.codec.Message;
+import com.buession.core.codec.MessageObject;
+
+public UserServiceImpl implements UserService {
+
+	@Message(value = "USER_NOT_FOUND", code = "errorCode", message = "codeMessage")
+	private MessageObject userNotFound;
+
+	@Override
+	public User update(User user) throws Exception{
+		User dbUser = get(user.getId());
+
+		if(dbUser == null){
+			throw new Exception(userNotFound.getMessage() + "(code: " + userNotFound.getCode() + ")");
+			// 用户不存在(code: 10404)
+		}
+
+	}
+
+}
+```
