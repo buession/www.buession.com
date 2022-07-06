@@ -218,7 +218,7 @@ List<T> list = Maps.toList(maps);
 ```
 
 
-可以通过方法 toList 将 Map 的 value 转换为 Set：
+可以通过方法 toSet 将 Map 的 value 转换为 Set：
 
 ```java
 import com.buession.core.collect.Maps;
