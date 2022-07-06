@@ -1,5 +1,5 @@
 ### buession-aop
-* AOP 封装，方便实现基于 aspectj 的自定义注解
+* AOP 封装，方便实现自定义注解
 
 ### buession-beans
 * Bean 工具类封
@@ -19,7 +19,7 @@
 * Manager 层注解
 
 ### buession-cron
-* 对 org.quartz-scheduler:quartz 的二次封装
+* 对 quartz 的二次封装
 
 ### buession-dao
 * 对 mybatis、spring-data-mongo 常用方法（如：根据条件获取单条记录、根据主键获取单条记录、分页、根据条件删除数据、根据主键删除数据）进行了二次封装
