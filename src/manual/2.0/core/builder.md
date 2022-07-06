@@ -100,4 +100,4 @@ Map、Set、Queue 同理。
 | <K, V> Map<K, V> MapBuilder.of(V value)  | 创建仅有一个元素的 Key 为 K 类型，值为 V 类型的 Map 对象 |
 
 
-## [API 参考手册](manual/2.0/docs/buession-core/com/buession/core/builder/package-summary.html)
+## [API 参考手册>>](/manual/2.0/docs/buession-core/com/buession/core/builder/package-summary.html)
