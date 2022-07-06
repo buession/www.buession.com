@@ -5,6 +5,7 @@
   * [框架介绍](intro.md)
   * [开源协议](license.md)
   * [模块说明](module.md)
+  * [下一步计划](plan.md)
 
 ### 快速开始
 
