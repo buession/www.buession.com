@@ -12,6 +12,8 @@
 使用此方法，可以实现两个对象之间的属性拷贝，该方式基于 BeanCopier 实现属性的拷贝。如果 source 对象是 Map 接口的实现，则会将 Map 的 key 和 target 的属性做映射，实现同名拷贝。
 
 ```java
+import com.buession.beans.BeanUtils;
+
 BeanUtils.copyProperties(target, source)
 ```
 
@@ -21,6 +23,9 @@ BeanUtils.copyProperties(target, source)
 我们可以指定 Converter 实现自定义规则进行属性拷贝。该方式的缺点是：BeanCopier 只使用 Converter 定义的规则去拷贝属性，所以在 convert 方法中要考虑所有的属性
 
 ```java
+import com.buession.beans.BeanUtils;
+import org.springframework.cglib.core.Converter;
+
 BeanUtils.copyProperties(target, source, new Converter() {
 
 	@Override
@@ -44,6 +49,8 @@ BeanUtils.copyProperties(target, source, new Converter() {
 使用此方法，可以实现两个对象之间的属性拷贝，该方式基于 BeanCopier 实现属性的拷贝。如果 source 对象是 Map 接口的实现，则会将 Map 的 key 转换为驼峰格式后和 target 的属性做映射，实现拷贝，这是 populate 和 copyProperties 的唯一区别。
 
 ```java
+import com.buession.beans.BeanUtils;
+
 BeanUtils.populate(target, source)
 ```
 
@@ -53,6 +60,9 @@ BeanUtils.populate(target, source)
 我们可以指定 Converter 实现自定义规则进行属性拷贝。该方式的缺点是：BeanCopier 只使用 Converter 定义的规则去拷贝属性，所以在 convert 方法中要考虑所有的属性
 
 ```java
+import com.buession.beans.BeanUtils;
+import org.springframework.cglib.core.Converter;
+
 BeanUtils.populate(target, source, new Converter() {
 
 	@Override
@@ -76,5 +86,7 @@ BeanUtils.populate(target, source, new Converter() {
 使用此方法，可以实现将一个 bean 对象转换为 Map，bean 的属性作为 Map 的 Key
 
 ```java
+import com.buession.beans.BeanUtils;
+
 Map<String, Object> result = BeanUtils.toMap(bean)
 ```
