@@ -225,5 +225,5 @@ import com.buession.core.collect.Maps;
 import com.buession.core.builder.ListBuilder;
 import java.util.Set;
 
-Set<T> list = Maps.toSet(maps);
+Set<T> set = Maps.toSet(maps);
 ```
