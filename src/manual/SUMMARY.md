@@ -6,7 +6,7 @@
     * [buession-aop](2.0/aop/index.md)
     * [buession-beans](2.0/beans/index.md)
     * [buession-core](2.0/core/index.md)
-     * [构建器](2.0/core/builder.md)
+      * [构建器](2.0/core/builder.md)
     * [buession-cron](2.0/cron/index.md)
     * [buession-dao](2.0/dao/index.md)
     * [buession-geoip](2.0/geoip/index.md)
