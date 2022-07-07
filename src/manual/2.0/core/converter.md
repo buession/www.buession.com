@@ -35,10 +35,37 @@ public interface Converter<S, T> {
 | SetConverter<S, T>  | 将 S 类型的 Set 对象转换为 T 类型的 Set 对象 |
 | MapConverter<SK, SV, TK, TV>  | 将 Key 为 SK 类型、值为 SV 类型的 Map 对象转换为 Key 为 TK 类型、值为 TV 类型的 Map |
 
+将 key 为 Integer 类型，value 为 Object 类型的 Map 转换成 key 为 String 类型，value 为 String 类型的 Map 对象
+```java
+import com.buession.core.converter.MapConverter;
+import java.util.Map;
+
+Map<Integer, Object> source;
+Map<String, String> target;
+MapConverter<Integer, Object, String, String> converter = new MapConverter<>();
+
+target = converter.convert(source);
+```
+
+将字符串转换为枚举
+```java
+import com.buession.core.converter.EnumConverter;
+import com.buession.lang.Gender;
+
+Gender target;
+EnumConverter<Gender> converter = new EnumConverter<>();
+
+target = converter.convert("FEMALE");
+// Gender.FEMALE
+
+target = converter.convert("F");
+// null
+```
+
 
 ### **POJO 类映射**
 
-我们通过 `com.buession.core.converter.mapper.Mapper` 接口约定了，基于 [mapstruct](https://mapstruct.org/)映射规范。关于 mapstruct 的更多文章，可通过搜索引擎自行搜索。
+我们通过 `com.buession.core.converter.mapper.Mapper` 接口约定了，基于 [mapstruct](https://mapstruct.org/) POJO 类的映射接口规范。关于 mapstruct 的更多文章，可通过搜索引擎自行搜索。
 
 ```java
 public interface Mapper<S, T> {
