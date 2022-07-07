@@ -53,7 +53,7 @@ import com.buession.core.converter.EnumConverter;
 import com.buession.lang.Gender;
 
 Gender target;
-EnumConverter<Gender> converter = new EnumConverter<>();
+EnumConverter<Gender> converter = new EnumConverter<>(Gender.class);
 
 target = converter.convert("FEMALE");
 // Gender.FEMALE
