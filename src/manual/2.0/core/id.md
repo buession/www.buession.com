@@ -64,3 +64,6 @@ idGenerator.nextId(); // 26d9ed57fdad443894b988eeabc69c05
 ```
 
 * 注：关于雪花算法、jnanoid 算法的可自行搜索。
+
+
+## [API 参考手册>>](/manual/2.0/docs/buession-core/com/buession/core/id/package-summary.html)

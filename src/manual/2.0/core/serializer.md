@@ -26,3 +26,6 @@
 4. 在将 JSON 字符串反序列化为对象时，默认返回类型依据 fastjson、jackson 等原生逻辑
 5. `FastJsonJsonSerializer`、`GsonJsonSerializer`、`JacksonJsonSerializer` 可以通过参数 `Class<T>`、`TypeReference<V>` 指定返回的对象类型
 6. `com.buession.core.serializer.type.TypeReference` 是某类型的一个指向或者引用，用于屏蔽 fastjson、gson、jackson 中通过 JDK `Type` 指定反序列化的类型；在 fastjson、gson 中是直接指定 `Type`，在 jackson 中是通过 `com.fasterxml.jackson.core.type.TypeReference` 类返回
+
+
+## [API 参考手册>>](/manual/2.0/docs/buession-core/com/buession/core/serializer/package-summary.html)
