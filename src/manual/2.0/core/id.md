@@ -40,6 +40,12 @@ public interface IdGenerator<T> {
 | UUIDIdGenerator  | UUID ID 生成器 |
 
 ```java
+import com.buession.core.id.AtomicUUIDIdGenerator;
+import com.buession.core.id.NanoIDIdGenerator;
+import com.buession.core.id.SnowflakeIdGenerator;
+import com.buession.core.id.UUIDIdGenerator;
+import com.buession.core.id.SimpleIdGenerator;
+
 AtomicUUIDIdGenerator idGenerator = new AtomicUUIDIdGenerator();
 idGenerator.nextId(); // 00000000-0000-0000-0000-000000000001
 idGenerator.nextId(); // 00000000-0000-0000-0000-000000000002
