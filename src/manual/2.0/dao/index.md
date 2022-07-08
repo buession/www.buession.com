@@ -13,4 +13,9 @@
 接口定义，可见：[https://www.buession.com/manual/2.0/docs/buession-dao/com/buession/dao/Dao.html](/manual/2.0/docs/buession-dao/com/buession/dao/Dao.html)
 
 
+### **读写分离**
+
+要从代码层面实现读写分离，必须继承 `AbstractMyBatisDao` 或者 `AbstractMongoDBDao`；且存在 bean 名为 `masterSqlSessionTemplate`、`slaveSqlSessionTemplates` 或者名为 `masterMongoTemplate`、`slaveMongoTemplates` 的 bean 实例。masterXXX 操作主库，实现插入、更新、删除操作；slaveXXX 操作从库，实现查询操作。
+
+
 ## [API 参考手册>>](/manual/2.0/docs/buession-dao/)
