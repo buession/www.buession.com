@@ -21,6 +21,8 @@
       * [异常](2.0/core/exception.md)
     * [buession-cron](2.0/cron/index.md)
     * [buession-dao](2.0/dao/index.md)
+      * [MyBatis](2.0/dao/mybatis.md)
+      * [MongoDB](2.0/dao/mongodb.md)
     * [buession-geoip](2.0/geoip/index.md)
     * [buession-httpclient](2.0/httpclient/index.md)
     * [buession-io](2.0/io/index.md)
