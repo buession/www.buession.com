@@ -25,7 +25,7 @@ public interface IdGenerator<T> {
 ```
 
 
-### **便捷方法**
+### **ID 生成器**
 
 
 |  生成器   | 说明  |
