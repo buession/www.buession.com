@@ -13,9 +13,45 @@
 接口定义，可见：[https://www.buession.com/manual/2.0/docs/buession-dao/com/buession/dao/Dao.html](/manual/2.0/docs/buession-dao/com/buession/dao/Dao.html)
 
 
+### **Dao 接口泛型参数**
+
+```java
+public interface Dao<P, E> {
+}
+```
+
+* `P`：主键类型
+* `E`：实体类
+
+
 ### **读写分离**
 
 要从代码层面实现读写分离，必须继承 `AbstractMyBatisDao` 或者 `AbstractMongoDBDao`；且存在 bean 名为 `masterSqlSessionTemplate`、`slaveSqlSessionTemplates` 或者名为 `masterMongoTemplate`、`slaveMongoTemplates` 的 bean 实例。masterXXX 操作主库，实现插入、更新、删除操作；slaveXXX 操作从库，实现查询操作。默认查询操作，会通过方法 `getSlaveSqlSessionTemplate()`、`getSlaveMongoTemplate()` 在所有的 slave templates 中随机返回一个，Template bean 实例。当然，您也可以通过 `getSlaveSqlSessionTemplate(final int index)`、`getSlaveMongoTemplate(final int index)` 指定索引的 Template bean 实例（当然，我们不建议您这么做）。如果没有指定 slave Template bean 实例列表，将会返回 master Template bean 实例，buession framework 屏蔽了这些技术细节。
+
+
+### **Mybatis 约定**
+
+1. 如果集成 `AbstractMyBatisDao` 类，必须重写方法 `getStatement()`，通过此方法返回每个 Mapper namespace
+
+
+```java
+namespace com.buession.dao.test.dao;
+
+public class UserDaoImpl extends AbstractMyBatisDao<Integer, User> {
+
+	@Override
+	protected String getStatement(){
+		return "com.buession.dao.test.dao.UserMapper";
+	}
+
+}
+```
+
+```xml
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.buession.dao.test.dao.UserMapper">
+</mapper>
+```
 
 
 ## [API 参考手册>>](/manual/2.0/docs/buession-dao/)
