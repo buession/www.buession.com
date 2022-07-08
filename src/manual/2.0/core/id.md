@@ -56,3 +56,5 @@ idGenerator.nextId(); // 8634a166-e7d6-4160-85eb-3433107de5a4
 SimpleIdGenerator idGenerator = new SimpleIdGenerator();
 idGenerator.nextId(); // 26d9ed57fdad443894b988eeabc69c05
 ```
+
+* 注：关于雪花算法、jnanoid 算法的可自行搜索。
