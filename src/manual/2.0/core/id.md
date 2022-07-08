@@ -38,3 +38,21 @@ public interface IdGenerator<T> {
 | SimpleIdGenerator  | 简单 ID 生成器，基于  UUID 生成，将 UUID 结果中的 "-" 过滤掉 |
 | SnowflakeIdGenerator  | 雪花算法 ID 生成器，此处不解决时钟回拨的问题，您可以通过构造函数指定开始时间、数据中心 ID、数据中心 ID 所占的位数等等值 |
 | UUIDIdGenerator  | UUID ID 生成器 |
+
+```java
+AtomicUUIDIdGenerator idGenerator = new AtomicUUIDIdGenerator();
+idGenerator.nextId(); // 00000000-0000-0000-0000-000000000001
+idGenerator.nextId(); // 00000000-0000-0000-0000-000000000002
+
+NanoIDIdGenerator idGenerator = new NanoIDIdGenerator();
+idGenerator.nextId(); // omRdTPCug5z_Uk1E_x3ozu3Avyyl3XSK
+
+SnowflakeIdGenerator idGenerator = new SnowflakeIdGenerator();
+idGenerator.nextId(); // 170602258864545792
+
+UUIDIdGenerator idGenerator = new UUIDIdGenerator();
+idGenerator.nextId(); // 8634a166-e7d6-4160-85eb-3433107de5a4
+
+SimpleIdGenerator idGenerator = new SimpleIdGenerator();
+idGenerator.nextId(); // 26d9ed57fdad443894b988eeabc69c05
+```
