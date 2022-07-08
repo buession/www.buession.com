@@ -178,27 +178,27 @@ boolean result = Validate.isIDCard("xxxxxxxxxxxxxxxxx", true, "2000-01-01");
 javax 的 validation 是 Java 定义的一套基于注解的数据校验规范，buession framework 基于 javax.validation 实现了 `Validate` 中所有验证方法的校验注解。
 
 
-|  注解   | 验证的数据类型 | 说明  |
-|  ----  | ----  | ----  |
-| @Alnum  | CharSequence 的子类型，Character | 验证注解的元素值是否为字母或数字 |
-| @Alpha  | CharSequence 的子类型，Character | 验证注解的元素值是否为字母 |
-| @Numeric  | CharSequence 的子类型，Character | 验证注解的元素值是否为数字 |
-| @Between  | short、int、double 等任何 Number 的子类型 | 验证注解的元素值是否为在两个数之间 |
-| @Empty  | CharSequence、Map、Collection、Iterator、Enumeration 的子类型和数组 | 验证注解的元素值是否为空 |
-| @NotEmpty  | CharSequence、Map、Collection、Iterator、Enumeration 的子类型和数组 | 验证注解的元素值是否不为空 |
-| @HasText  | CharSequence 的子类型 | 验证注解的元素值是否有非空字符 |
-| @IDCard  | CharSequence 的子类型 | 验证注解的元素值是否为身份证号码 |
-| @Ip  | CharSequence 的子类型 | 验证注解的元素值是否为 IP 地址 |
-| @Isbn  | CharSequence 的子类型 | 验证注解的元素值是否为 ISBN |
-| @MimeType  | CharSequence 的子类型 | 验证注解的元素值是否为字母或数字 |
-| @Mobile  | CharSequence 的子类型 | 验证注解的元素值是否为手机号码 |
-| @Null  | 任意类型 | 验证注解的元素值是否为 null |
-| @NotNull  | 任意类型 | 验证注解的元素值是否不为 null |
-| @Port  | Integer | 验证注解的元素值是否为合法的端口 |
-| @PostCode  | CharSequence 的子类型 | 验证注解的元素值是否为邮政编码 |
-| @QQ  | CharSequence 的子类型 | 验证注解的元素值是否为 QQ |
-| @Tel  | CharSequence 的子类型 | 验证注解的元素值是否为电话号码 |
-| @Xdigit  | CharSequence 的子类型 | 验证注解的元素值是否为 16 进制字符串 |
+|  注解       | 验证的数据类型                                                    | 说明                           |
+|  ----      | ----                                                             | ----                          |
+| @Alnum     | CharSequence 的子类型，Character                                  | 验证注解的元素值是否为数字        |
+| @Alpha     | CharSequence 的子类型，Character                                  | 验证注解的元素值是否为数字        |
+| @Numeric   | CharSequence 的子类型，Character                                  | 验证注解的元素值是否为数字        |
+| @Between   | short、int、double 等任何 Number 的子类型                          | 验证注解的元素值是否为在两个数之间 |
+| @Empty     | CharSequence、Map、Collection、Iterator、Enumeration 的子类型和数组 | 验证注解的元素值是否为空         |
+| @NotEmpty  | CharSequence、Map、Collection、Iterator、Enumeration 的子类型和数组 | 验证注解的元素值是否不为空        |
+| @HasText   | CharSequence 的子类型                                             | 验证注解的元素值是否有非空字符    |
+| @IDCard    | CharSequence 的子类型                                             | 验证注解的元素值是否有非空字符    |
+| @Ip        | CharSequence 的子类型                                             | 验证注解的元素值是否有非空字符    |
+| @Isbn      | CharSequence 的子类型                                             | 验证注解的元素值是否有非空字符    |
+| @MimeType  | CharSequence 的子类型                                             | 验证注解的元素值是否有非空字符    |
+| @Mobile    | CharSequence 的子类型                                             | 验证注解的元素值是否有非空字符    |
+| @Null      | 任意类型                                                          | 验证注解的元素值是否为 null      |
+| @NotNull   | 任意类型                                                          | 验证注解的元素值是否为 null      |
+| @Port      | Integer                                                          | 验证注解的元素值是否为 null      |
+| @PostCode  | CharSequence 的子类型                                             | 验证注解的元素值是否为 null      |
+| @QQ        | CharSequence 的子类型                                             | 验证注解的元素值是否为 null      |
+| @Tel       | CharSequence 的子类型                                             | 验证注解的元素值是否为 null      |
+| @Xdigit    | CharSequence 的子类型                                             | 验证注解的元素值是否为 null      |
 
 
 ## [API 参考手册>>](/manual/2.0/docs/buession-core/com/buession/core/validator/package-summary.html)
