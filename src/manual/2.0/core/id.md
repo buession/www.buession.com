@@ -6,8 +6,8 @@
 
 基于 UUID、jnanoid ID、雪花算法等等的 ID 生成器。
 
-
 您可以通过 buession framework 提供的 ID 生成器，生成唯一 ID。
+
 
 接口规范。
 
