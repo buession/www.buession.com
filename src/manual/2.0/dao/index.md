@@ -10,12 +10,12 @@
 
 同时，我们在代码层面实现了数据库的读写分离。
 
-接口定义，可见：[https://www.buession.com/manual/2.0/docs/buession-dao/com/buession/dao/Dao.html](/manual/2.0/docs/buession-dao/com/buession/dao/Dao.html)
-
 我们没有改变 MyBatis 和 spring-data-mongodb 的任何底层逻辑，本质就是 MyBaits 和 spring-data-mongodb；我们唯一做了的就是，定义和是了大家在应用程序中常用的方法，让您不在重复去编写该部分代码；以及在代码层面实现了数据的读写分离。
 
 
-### **Dao 接口泛型参数**
+### **Dao 接口**
+
+接口定义，可见：[https://www.buession.com/manual/2.0/docs/buession-dao/com/buession/dao/Dao.html](/manual/2.0/docs/buession-dao/com/buession/dao/Dao.html)
 
 ```java
 public interface Dao<P, E> {
