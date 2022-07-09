@@ -69,9 +69,14 @@ Location location = resolver.location(3739974408L); // 3739974408L => 222.235.12
 ```
 
 
+### **缓存**
+
+为了提高数据的处理能力，可以将获取过的数据缓存起来，下次获取同一 IP 信息时，可以直接从缓存中返回。您可以通过 `DatabaseResolver` 构造函数中的参数 `cache` 设置为 `com.maxmind.db.NodeCache` 的实现类即可，或直接使用类 `CacheDatabaseResolver`解析。我们默认使用 `maxmind` 内置的 `CHMCache` 来实现缓存，它是基于 `ConcurrentHashMap` 的内存缓存。
+
+
 ### **关于 IP 库**
 
-`buession-geoip` 中包含了 `maxmind` 免费的 IP 所属城市和国家的库，由于该数据库无法做到及时更新，在实际应用中，我们建议您从 `maxmind` 官网下载 IP 方法您的应用中，通过 `DatabaseResolver` 的构造函数指定 IP 库路径，这么做的好处是：在您的应用程序中，可以去保证 IP 库是更新的。
+`buession-geoip` 中包含了 `maxmind` 免费的 IP 所属城市和国家的库。由于在 jar 包中该数据库无法做到及时更新，在实际应用中，我们建议您从 `maxmind` 官网下载 IP 方法您的应用中，通过 `DatabaseResolver` 的构造函数指定 IP 库路径，这么做的好处是：在您的应用程序中，可以去保证 IP 库是更新的。
 
 
 ## [API 参考手册>>](/manual/2.0/docs/buession-geoip/)
