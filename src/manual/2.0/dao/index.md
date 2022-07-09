@@ -26,6 +26,13 @@ public interface Dao<P, E> {
 * `E`：实体类
 
 
+分页对象 `com.buession.dao.Pagination` 继承自 `com.buession.core.Pagination`，增加了偏移量属性 `offset`。
+
+条件为 `Map<String, Object>` 类型，允许为 null。
+
+排序为 `Map<String, com.buession.lang.Order>` 类型，允许为 null。
+
+
 #### [MyBatis](mybatis.md)
 
 Buession Framework 扩展 MyBatis 的文档。

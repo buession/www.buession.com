@@ -62,7 +62,7 @@ public class UserDaoImpl extends AbstractMyBatisDao<Integer, User> {
 
 ### **Mybatis 类型处理器**
 
-MyBatis 自身提供大量优秀的类型处理器 `TypeHandler`，但任然不足。我们在此基础上扩展了一些 `TypeHandler`。
+MyBatis 自身提供大量优秀的类型处理器 `TypeHandler`，但任然不足。我们在此基础上扩展了一些 `TypeHandler`。名称空间为 `org.apache.ibatis.type`，不是 `com.buession.dao`。
 
 
 |  TypeHandler   | 说明  |
