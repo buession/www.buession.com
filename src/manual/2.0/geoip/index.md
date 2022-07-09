@@ -54,6 +54,8 @@ District district = resolver.district(3739974408L); // 3739974408L => 222.235.12
 
 ### **获取位置信息**
 
+位置信息中包括了该 IP 比较全面的信息，包括：城市信息、国家信息、洲信息、经纬度、机构信息、时区等。
+
 ```java
 import com.buession.geoip.model.Country;
 import com.buession.geoip.model.DatabaseResolver;
