@@ -5,3 +5,14 @@ spring mvc 不再支持 velocity，这里主要是把原来 spring mvc 中关于
 
 
 ---
+
+
+### **安装**
+
+```xml
+<dependency>
+    <groupId>com.buession</groupId>
+    <artifactId>buession-velocity</artifactId>
+    <version>x.x.x</version>
+</dependency>
+```

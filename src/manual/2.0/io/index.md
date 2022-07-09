@@ -5,3 +5,14 @@
 
 
 ---
+
+
+### **安装**
+
+```xml
+<dependency>
+    <groupId>com.buession</groupId>
+    <artifactId>buession-io</artifactId>
+    <version>x.x.x</version>
+</dependency>
+```

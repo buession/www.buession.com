@@ -6,6 +6,17 @@
 
 ---
 
+
+### **安装**
+
+```xml
+<dependency>
+    <groupId>com.buession</groupId>
+    <artifactId>buession-session</artifactId>
+    <version>x.x.x</version>
+</dependency>
+```
+
 该模块无实际意义，将在今后的版本中会删除掉。
 
 

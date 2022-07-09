@@ -7,6 +7,17 @@
 ---
 
 
+### **安装**
+
+```xml
+<dependency>
+    <groupId>com.buession</groupId>
+    <artifactId>buession-core</artifactId>
+    <version>x.x.x</version>
+</dependency>
+```
+
+
 #### [构建器](builder.md)
 
 Map、集合的便捷式构建，减少您的代码行数

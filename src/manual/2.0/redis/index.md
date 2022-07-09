@@ -5,3 +5,14 @@ Redis 操作类，基于 jedis 实现，RedisTemplate 方法名、参数几乎�
 
 
 ---
+
+
+### **安装**
+
+```xml
+<dependency>
+    <groupId>com.buession</groupId>
+    <artifactId>buession-redis</artifactId>
+    <version>x.x.x</version>
+</dependency>
+```

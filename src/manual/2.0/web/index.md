@@ -5,3 +5,14 @@ web 相关的功能封装，支持 servlet 和 reactive；封装了一些常用�
 
 
 ---
+
+
+### **安装**
+
+```xml
+<dependency>
+    <groupId>com.buession</groupId>
+    <artifactId>buession-web</artifactId>
+    <version>x.x.x</version>
+</dependency>
+```

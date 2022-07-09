@@ -7,6 +7,17 @@
 ---
 
 
+### **安装**
+
+```xml
+<dependency>
+    <groupId>com.buession</groupId>
+    <artifactId>buession-beans</artifactId>
+    <version>x.x.x</version>
+</dependency>
+```
+
+
 ### **属性拷贝**
 
 使用此方法，可以实现两个对象之间的属性拷贝，该方式基于 BeanCopier 实现属性的拷贝。如果 source 对象是 Map 接口的实现，则会将 Map 的 key 和 target 的属性做映射，实现同名拷贝。
