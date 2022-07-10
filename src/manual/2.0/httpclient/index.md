@@ -16,3 +16,5 @@
     <version>x.x.x</version>
 </dependency>
 ```
+
+我们在应用中使用 Http Client 功能时，经常因为从 `apache httpcomponents` 切换为 `okhttp`，或者从 `okhttp` 切换为 `apache httpcomponents`，需要改动大量的代码而烦恼。
