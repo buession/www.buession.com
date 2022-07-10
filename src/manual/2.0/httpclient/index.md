@@ -78,6 +78,11 @@ Response httpResponse = httpClient.newCall(okHttpRequest).execute();
 
 ```xml
 <dependency>
+    <groupId>com.buession</groupId>
+    <artifactId>buession-httpclient</artifactId>
+    <version>x.x.x</version>
+</dependency>
+<dependency>
     <groupId>org.apache.httpcomponents</groupId>
     <artifactId>httpcore</artifactId>
     <version>x.x.x</version>
@@ -92,6 +97,11 @@ Response httpResponse = httpClient.newCall(okHttpRequest).execute();
 或者
 
 ```xml
+<dependency>
+    <groupId>com.buession</groupId>
+    <artifactId>buession-httpclient</artifactId>
+    <version>x.x.x</version>
+</dependency>
 <dependency>
     <groupId>com.squareup.okhttp3</groupId>
     <artifactId>okhttp</artifactId>
