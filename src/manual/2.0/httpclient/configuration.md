@@ -11,7 +11,7 @@
 
 
 |  属性名称             | 数据类型  | apache httpcomponents 对应配置    | okhttp3 对应配置       | 默认值      | 说明                    |
-|  ----                | ----     | ----                             | ----                  | ----       |                        |
+|  ----                | ----     | ----                             | ----                  | ----       | ----                   |
 |  maxConnections      | int      | maxTotal                         | maxIdleConnections    | 5000       | 最大连接数              |
 |  maxPerRoute         | int      | defaultMaxPerRoute               | --                    | 500        | 每个路由的最大连接数      |
 |  idleConnectionTime  | int      | --                               | keepAliveDuration     | 60000      | 空闲连接存活时长（单位：毫秒）      |
