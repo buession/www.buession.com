@@ -69,4 +69,47 @@ MimeType result = file.getMimeType();
 ```
 
 
+### **设置文件权限**
+
+```java
+import com.buession.io.file.Files;
+
+Files.chmod("/tmp/debug.txt", 0777);
+```
+
+
+### **设置文件用户组**
+
+```java
+import com.buession.io.file.Files;
+
+Files.chgrp("/tmp/debug.txt", "root");
+```
+
+
+### **设置文件用户**
+
+```java
+import com.buession.io.file.Files;
+
+Files.chown("/tmp/debug.txt", "root");
+```
+
+
+### **注解**
+
+注解 `com.buession.io.json.annotation.MimeTypeString` 可以将类型为 `com.buession.io.MimeType` 的字段序列化为字符串和将字符串反序列化为 `com.buession.io.MimeType`，该功能是基于 jackson 实现的。
+
+```java
+import com.buession.io.json.annotation.MimeTypeString;
+
+class File {
+
+    @MimeTypeString
+    private MimeType mime;
+
+}
+```
+
+
 ## [API 参考手册>>](/manual/2.0/docs/buession-io/)
