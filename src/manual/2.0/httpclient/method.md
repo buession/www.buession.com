@@ -93,3 +93,22 @@ JsonRawRequestBody requestBody = new JsonRawRequestBody(new User());
 // PUT 请求
 Response response = httpClient.put("https://www.buession.com/", requestBody);
 ```
+
+不同的 `RequestBody`，决定了我们以什么样的 `Content-Type` 提交数据，`buession-httpclient` 中提供了大量的内置 `RequestBody`。
+
+
+### **RequestBody**
+
+
+|  RequestBody                        | Content-Type                         | 说明                     |
+|  ----                               | ----                                 | ----                    |
+|  InputStreamRequestBody             | application/octet-stream             | 二进制请求体              |
+|  ChunkedInputStreamRequestBody      | application/octet-stream             | Chunked 二进制请求体      |
+|  RepeatableInputStreamRequestBody   | application/octet-stream             | Repeatable 二进制请求体    |
+|  EncodedFormRequestBody             | application/x-www-form-urlencoded    | 普通表单请求体             |
+|  MultipartFormRequestBody           | multipart/form-data                  | 文件上传表单请求体         |
+|  HtmlRawRequestBody                 | text/html                            | HTML 请求体               |
+|  JavaScriptRawRequestBody           | application/javascript               | JavaScript 请求体        |
+|  JsonRawRequestBody                 | application/json                     | JSON 请求体              |
+|  TextRawRequestBody                 | text/plain                           | TEXT 请求体              |
+|  XmlRawRequestBody                  | text/xml                             | XML 请求体               |
