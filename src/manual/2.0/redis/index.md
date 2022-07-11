@@ -25,9 +25,15 @@ Redis 操作类，基于 jedis 实现，RedisTemplate 方法名、参数几乎�
 
 ```java
 import com.buession.redis.RedisTemplate;
+import com.buession.redis.core.Options;
 import com.buession.core.serializer.type.TypeReference;
 import java.utils.Map;
 import java.utils.HashMap;
+
+RedisTemplate redisTemplate = new RedisTemplate(dataSource);
+
+redisTemplate.setOptions(new Options());
+redisTemplate.afterPropertiesSet();
 
 // 将 User 对象写进 key 为 user hash 中
 redisTemplate.hSet("user", "1", new User());

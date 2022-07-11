@@ -43,7 +43,7 @@ import org.apache.http.client.methods.HttpPost;
 
 HttpClient httpClient = HttpClientBuilder.create().setConnectionManager(new HttpClientConnectionManager()).build();
 
-HttpResponse response = httpClient.execute(new HttpPost("https://www.buesion.com/"));
+HttpResponse response = httpClient.execute(new HttpPost("https://www.buession.com/"));
 ```
 
 或者
@@ -68,7 +68,7 @@ OkHttpClient.Builder builder = new OkHttpClient.Builder().connectionPool(new Con
 HttpClient httpClient = builder.build();
 
 Builder requestBuilder = new Builder().post();
-requestBuilder.url("https://www.buesion.com/");
+requestBuilder.url("https://www.buession.com/");
 Request okHttpRequest = requestBuilder.build();
 
 Response httpResponse = httpClient.newCall(okHttpRequest).execute();
@@ -119,7 +119,7 @@ import com.buession.httpclient.core.Response;
 
 HttpClient httpClient = new ApacheHttpClient(new ApacheClientConnectionManager()); // 或者 new OkHttpHttpClient(new OkHttpClientConnectionManager());
 
-Response httpResponse = httpClient.post("https://www.buesion.com/");
+Response response = httpClient.post("https://www.buession.com/");
 ```
 
 ### **展望**

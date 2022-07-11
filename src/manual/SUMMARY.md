@@ -34,6 +34,7 @@
       * [安装](2.0/httpclient/index.md#安装)
       * [连接配置](2.0/httpclient/configuration.md)
       * [连接管理器](2.0/httpclient/connectionmanager.md)
+      * [响应](2.0/httpclient/response.md)
       * [方法](2.0/httpclient/method.md)
       * [展望](2.0/httpclient/index.md#展望)
     * [buession-io](2.0/io/index.md)
