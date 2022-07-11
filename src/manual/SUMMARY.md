@@ -61,3 +61,4 @@
       * [安装](2.0/velocity/index.md#安装)
     * [buession-web](2.0/web/index.md)
       * [安装](2.0/web/index.md#安装)
+      * [注解](2.0/web/annotation.md)
