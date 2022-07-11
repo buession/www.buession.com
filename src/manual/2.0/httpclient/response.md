@@ -19,8 +19,10 @@ import java.io.InputStream;
 HttpClient httpClient = new ApacheHttpClient(new ApacheClientConnectionManager());
 
 Response response = httpClient.post("https://www.buession.com/");
-InputStream stream response.getInputStream(); // 以流的形式获取响应体
-String body response.getBody(); // 以字符串的形式获取响应体
+InputStream stream = response.getInputStream(); // 以流的形式获取响应体
+String body = response.getBody(); // 以字符串的形式获取响应体
+
+stream.close();
 ```
 
 `getInputStream`、`getBody` 二者可以重复调用，当时您需要始终手动关闭一下流，因为这将是拷贝的原生 `apache httpcomponents` 或 `okhttp3` 返回的流。
