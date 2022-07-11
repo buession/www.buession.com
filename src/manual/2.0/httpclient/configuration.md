@@ -14,7 +14,7 @@
 |  ----                | ----     | ----                             | ----                  | ----       | ----                   |
 |  maxConnections      | int      | maxTotal                         | maxIdleConnections    | 5000       | 最大连接数              |
 |  maxPerRoute         | int      | defaultMaxPerRoute               | --                    | 500        | 每个路由的最大连接数      |
-|  idleConnectionTime  | int      | --                               | keepAliveDuration     | 60000      | 空闲连接存活时长（单位：毫秒）      |
+|  idleConnectionTime  | int      | closeIdleConnections             | keepAliveDuration     | 60000      | 空闲连接存活时长（单位：毫秒）      |
 |  connectTimeout      | int      | connectTimeout                   | connectTimeout        | 3000       | 连接超时时间（单位：毫秒）      |
 |  connectionRequestTimeout    | int     | connectionRequestTimeout  | --                    | 5000       | 从连接池获取连接的超时时间（单位：毫秒）     |
 |  readTimeout      | int      | socketTimeout                       | readTimeout           | 5000       | 读取超时时间（单位：毫秒）      |
