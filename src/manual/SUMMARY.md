@@ -49,6 +49,7 @@
     * [buession-redis](2.0/redis/index.md)
       * [安装](2.0/redis/index.md#安装)
       * [介绍](2.0/redis/index.md#介绍)
+      * [数据源](2.0/redis/datasource.md)
       * [方法](2.0/redis/index.md#方法)
       * [展望](2.0/redis/index.md#展望)
     * [buession-session](2.0/session/index.md)
