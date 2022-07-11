@@ -15,5 +15,5 @@
 | @ContentType        | response                | 类、方法             | 设置响应 Content-Type                                   |
 | @HttpCache          | response                | 类、方法             | 设置响应缓存头 Cache-Control、Expires、Pragma 值           |
 | @DisableHttpCache   | response                | 类、方法             | 设置响应缓存头 Cache-Control、Expires、Pragma 值，禁止缓存  |
-| ResponseHeader      | response                | 类、方法             | 设置响应头                                                |
-| ResponseHeaders     | response                | 类、方法             | 批量设置响应头                                             |
+| @ResponseHeader     | response                | 类、方法             | 设置响应头                                                |
+| @ResponseHeaders    | response                | 类、方法             | 批量设置响应头                                            |

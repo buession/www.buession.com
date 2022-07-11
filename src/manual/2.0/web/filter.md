@@ -6,7 +6,7 @@
 
 我们封装了一些使用的过滤器，简化了您的开发或者应用运行的跟踪。
 
-servlet 包位于 `com.buession.web.servlet.filter`，webflux 包位于 `com.buession.web.reactive.filter`，均有同样类名的过滤器类，粉笔用
+servlet 包位于 `com.buession.web.servlet.filter`，webflux 包位于 `com.buession.web.reactive.filter`，均有同样类名的过滤器类。
 
 
 ### **过滤器**
