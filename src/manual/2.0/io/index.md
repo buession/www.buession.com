@@ -57,7 +57,7 @@ String sha1 = file.getSha1(); // 获取文件 SHA-1
 ```
 
 
-### **获取文件 MD5、SHA-1值**
+### **获取文件 MD5、SHA-1 值**
 
 ```java
 import com.buession.io.file.File;
