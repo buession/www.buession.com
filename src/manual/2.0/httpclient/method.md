@@ -112,3 +112,6 @@ Response response = httpClient.put("https://www.buession.com/", requestBody);
 |  JsonRawRequestBody                 | application/json                     | JSON 请求体              |
 |  TextRawRequestBody                 | text/plain                           | TEXT 请求体              |
 |  XmlRawRequestBody                  | text/xml                             | XML 请求体               |
+
+
+## [API 参考手册>>](/manual/2.0/docs/buession-httpclient/com/buession/httpclient/HttpClient.html)

@@ -25,3 +25,6 @@
 |  authenticationEnabled      | boolean      | authenticationEnabled         | --    | --       | 是否开启 Http Basic 认证      |
 |  contentCompressionEnabled      | boolean      | contentCompressionEnabled         | --    | --       | 是否启用内容压缩      |
 |  normalizeUri      | boolean      | normalizeUri         | --    | --       | 是否标准化 URI      |
+
+
+## [API 参考手册>>](/manual/2.0/docs/docs/buession-httpclient/com/buession/httpclient/core/Configuration.html)
