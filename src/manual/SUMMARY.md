@@ -63,4 +63,5 @@
       * [安装](2.0/web/index.md#安装)
       * [注解](2.0/web/annotation.md)
       * [过滤器](2.0/web/filter.md)
+      * [RESTFUL](2.0/web/restful.md)
       * [工具](2.0/web/utils.md)
