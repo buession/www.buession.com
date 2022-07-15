@@ -6,12 +6,12 @@
 Buession Framework 扩展 MyBatis 的文档。
 
 
-### **读写分离**
+### 读写分离
 
 要从代码层面实现读写分离，必须继承 `AbstractMyBatisDao`；且存在 bean 名为 `masterSqlSessionTemplate`、`slaveSqlSessionTemplates` 的 bean 实例。masterSqlSessionTemplate 操作主库，实现插入、更新、删除操作；slaveSqlSessionTemplates 操作从库，实现查询操作。默认查询操作，会通过方法 `getSlaveSqlSessionTemplate()` 在所有的 slave templates 中随机返回一个 slave SqlSessionTemplate bean 实例。当然，您也可以通过 `getSlaveSqlSessionTemplate(final int index)` 指定索引的 slave SqlSessionTemplate bean 实例（当然，我们不建议您这么做）。如果没有指定 slave SqlSessionTemplate bean 实例列表，将会返回 master SqlSessionTemplate bean 实例，buession framework 屏蔽了这些技术细节。
 
 
-### **Mybatis 约定**
+### Mybatis 约定
 
 1. 如果集成 `AbstractMyBatisDao` 类，必须重写方法 `getStatement()`，通过此方法返回每个 Mapper namespace
 
@@ -60,7 +60,7 @@ public class UserDaoImpl extends AbstractMyBatisDao<Integer, User> {
   以上 SQL ID，只是一种约定，具体会呈现一种什么样的效果，还是完全屈居于您的 SQL 语句。
 
 
-### **Mybatis 类型处理器**
+### Mybatis 类型处理器
 
 MyBatis 自身提供大量优秀的类型处理器 `TypeHandler`，但任然不足。我们在此基础上扩展了一些 `TypeHandler`。名称空间为 `org.apache.ibatis.type`，不是 `com.buession.dao`。
 
@@ -75,4 +75,4 @@ MyBatis 自身提供大量优秀的类型处理器 `TypeHandler`，但任然不�
 | DefaultSetTypeHandler  | 默认 Set 类型处理器，将值以 "," 拆分转换为 Set&lt;String&gt; |
 
 
-## [API 参考手册>>](/manual/2.0/docs/buession-dao/com/buession/dao/AbstractMyBatisDao.html)
+### [API 参考手册>>](/manual/2.0/docs/buession-dao/com/buession/dao/AbstractMyBatisDao.html)

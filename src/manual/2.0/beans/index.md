@@ -7,7 +7,7 @@
 ---
 
 
-### **安装**
+### 安装
 
 ```xml
 <dependency>
@@ -18,7 +18,7 @@
 ```
 
 
-### **属性拷贝**
+### 属性拷贝
 
 使用此方法，可以实现两个对象之间的属性拷贝，该方式基于 BeanCopier 实现属性的拷贝。如果 source 对象是 Map 接口的实现，则会将 Map 的 key 和 target 的属性做映射，实现同名拷贝。
 
@@ -55,7 +55,7 @@ BeanUtils.copyProperties(target, source, new Converter() {
 });
 ```
 
-### **属性映射**
+### 属性映射
 
 使用此方法，可以实现两个对象之间的属性拷贝，该方式基于 BeanCopier 实现属性的拷贝。如果 source 对象是 Map 接口的实现，则会将 Map 的 key 转换为驼峰格式后和 target 的属性做映射，实现拷贝，这是 populate 和 copyProperties 的唯一区别。
 
@@ -92,7 +92,7 @@ BeanUtils.populate(target, source, new Converter() {
 });
 ```
 
-### **Bean 转换为 Map**
+### Bean 转换为 Map
 
 使用此方法，可以实现将一个 bean 对象转换为 Map，bean 的属性作为 Map 的 Key
 
@@ -103,4 +103,4 @@ Map<String, Object> result = BeanUtils.toMap(bean)
 ```
 
 
-## [API 参考手册>>](/manual/2.0/docs/buession-beans/)
+### [API 参考手册>>](/manual/2.0/docs/buession-beans/)

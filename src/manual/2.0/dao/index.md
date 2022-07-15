@@ -7,7 +7,7 @@
 ---
 
 
-### **安装**
+### 安装
 
 ```xml
 <dependency>
@@ -24,7 +24,7 @@
 我们没有改变 MyBatis 和 spring-data-mongodb 的任何底层逻辑，本质就是 MyBaits 和 spring-data-mongodb；我们唯一做了的就是，定义和是了大家在应用程序中常用的方法，让您不在重复去编写该部分代码；以及在代码层面实现了数据的读写分离。
 
 
-### **Dao 接口**
+### Dao 接口
 
 接口定义，可见：[https://www.buession.com/manual/2.0/docs/buession-dao/com/buession/dao/Dao.html](/manual/2.0/docs/buession-dao/com/buession/dao/Dao.html)
 
@@ -54,4 +54,4 @@ Buession Framework 扩展 MyBatis 的文档。
 Buession Framework 扩展 spring-data-mongodb 的文档。
 
 
-## [API 参考手册>>](/manual/2.0/docs/buession-dao/)
+### [API 参考手册>>](/manual/2.0/docs/buession-dao/)

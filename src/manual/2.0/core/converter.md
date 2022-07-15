@@ -20,7 +20,7 @@ public interface Converter<S, T> {
 将类似为 S 的对象转换为类型为 T 的对象。
 
 
-### **内置转换器**
+### 内置转换器
 
 
 |  转换器   | 说明  |
@@ -36,6 +36,7 @@ public interface Converter<S, T> {
 | MapConverter<SK, SV, TK, TV>  | 将 Key 为 SK 类型、值为 SV 类型的 Map 对象转换为 Key 为 TK 类型、值为 TV 类型的 Map |
 
 将 key 为 Integer 类型，value 为 Object 类型的 Map 转换成 key 为 String 类型，value 为 String 类型的 Map 对象
+
 ```java
 import com.buession.core.converter.MapConverter;
 import java.util.Map;
@@ -48,6 +49,7 @@ target = converter.convert(source);
 ```
 
 将字符串转换为枚举
+
 ```java
 import com.buession.core.converter.EnumConverter;
 import com.buession.lang.Gender;
@@ -63,7 +65,7 @@ target = converter.convert("F");
 ```
 
 
-### **POJO 类映射**
+### POJO 类映射
 
 我们通过 `com.buession.core.converter.mapper.Mapper` 接口约定了，基于 [mapstruct](https://mapstruct.org/) POJO 类的映射接口规范。关于 mapstruct 的更多文章，可通过搜索引擎自行搜索。
 
@@ -113,5 +115,18 @@ public interface Mapper<S, T> {
 }
 ```
 
+我们还可以使用工具类 `com.buession.core.converter.mapper.PropertyMapper` 将值从提供的源映射到目标，此方法来拷贝并简单修改于：`springboot` 中的 `org.springframework.boot.context.properties.PropertyMapper`，和原生 `springboot` 中的用法一样。
 
-## [API 参考手册>>](/manual/2.0/docs/buession-core/com/buession/core/converter/package-summary.html)
+```java
+import com.buession.core.converter.mapper.PropertyMapper;
+
+User source = new User();
+User target = new User();
+
+PropertyMapper propertyMapper = PropertyMapper.get().alwaysApplyingWhenNonNull();
+propertyMapper.form(source::getId).to(target:setId)
+// null
+```
+
+
+### [API 参考手册>>](/manual/2.0/docs/buession-core/com/buession/core/converter/package-summary.html)

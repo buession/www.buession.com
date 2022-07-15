@@ -7,22 +7,22 @@
 常用通用性工具类。
 
 
-### **Byte 数组比较**
+### Byte 数组比较
 
 `ByteArrayComparable` 类为 java `Comparable` 的实现，实现了 byte 数组的比较。
 
 
-### **注解工具**
+### 注解工具
 
 `AnnotationUtils` 继承 `org.springframework.core.annotation.AnnotationUtils` ，在此基础上新增了方法 `hasClassAnnotationPresent(final Class<?> clazz, final Class<? extends Annotation>[] annotations)`、`hasMethodAnnotationPresent(Method method, final Class<? extends Annotation>[] annotations)` 判断类或者方法上是否有待检测的注解中的其中一个注解。
 
 
-### **断言**
+### 断言
 
 `Assert` 和 springframework 中的注解类似，不过逻辑有些相反。
 
 
-### **Byte 工具**
+### Byte 工具
 
 `ByteUtils` 可以将 byte 数组转换为 char 或者 char 数组。
 
@@ -46,7 +46,7 @@ byte[] result = ByteUtils.concat(dest, source);
 ```
 
 
-### **Character 工具**
+### Character 工具
 
 `CharacterUtils` 继承 `org.apache.commons.lang3.CharUtils`，可以将 char、char 数组转换为 byte 数组。
 
@@ -61,7 +61,7 @@ byte[] bytes = ByteUtils.toBytes(chars);
 ```
 
 
-### **数字工具**
+### 数字工具
 
 `NumberUtils` 提供了对数字相关的操作。
 
@@ -76,7 +76,7 @@ byte[] bytes = ByteUtils.toBytes(chars);
 | double2bytes  | 将 double 转换为 byte[] |
 | bytes2double  | 将 byte[] 转换为 double |
 
-### **字符串工具**
+### 字符串工具
 
 `StringUtils` 继承了 `org.apache.commons.lang3.StringUtils`，封装了多字符串更多的操作。
 
@@ -117,7 +117,7 @@ boolean result = StringUtils.equalsIgnoreCase("abcd", "aBce", 4); // false
 ```
 
 
-### **拼音工具**
+### 拼音工具
 
 `PinyinUtils` 封装了获取中文拼音、拼音首字母的方法。
 
@@ -128,7 +128,7 @@ String result = PinyinUtils.getPinyin("中国"); // zhongguo
 String result = PinyinUtils.getPinYinFirstChar("中国"); // zg
 ```
 
-### **随机数工具**
+### 随机数工具
 
 `RandomUtils` 封装了随机数的生成。
 
@@ -142,7 +142,7 @@ String result = PinyinUtils.getPinYinFirstChar("中国"); // zg
 | nextDouble  | 生成指定范围内的 double 值，默认：0 到 Double.MAX_VALUE |
 
 
-### **Properties 工具**
+### Properties 工具
 
 `PropertiesUtils` 封装了对 `Properties` 的操作，主要是 `Properties.getProperty` 的值为字符串，而我们在实际场景中，很多时候其值可能为 int、double。传统方法是，我们在代码中通过 `Properties.getProperty` 获取其值后，对其进行转换；而 `PropertiesUtils` 简化了操作。
 
@@ -154,7 +154,7 @@ Boolean result = PropertiesUtils.getBoolean(properties, key);
 ```
 
 
-### **System Property 工具**
+### System Property 工具
 
 `SystemPropertyUtils` 封装了系统属性或系统环境变量的操作。
 
@@ -178,7 +178,7 @@ if(Validate.hasText(value) == false){
 ```
 
 
-### **版本工具**
+### 版本工具
 
 `VersionUtils` 提供了对两个版本值的比较方法和获取类、jar 对应的版本。
 
@@ -200,4 +200,4 @@ ByteUtils.determineClassVersion(com.buession.core.utils.VersionUtils.class); // 
 ```
 
 
-## [API 参考手册>>](/manual/2.0/docs/buession-core/com/buession/core/utils/package-summary.html)
+### [API 参考手册>>](/manual/2.0/docs/buession-core/com/buession/core/utils/package-summary.html)

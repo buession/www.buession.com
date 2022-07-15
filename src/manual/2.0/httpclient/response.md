@@ -28,4 +28,4 @@ stream.close();
 `getInputStream`、`getBody` 二者可以重复调用，当时您需要始终手动关闭一下流，因为这将是拷贝的原生 `apache httpcomponents` 或 `okhttp3` 返回的流。
 
 
-## [API 参考手册>>](/manual/2.0/docs/buession-httpclient/com/buession/httpclient/core/Response.html)
+### [API 参考手册>>](/manual/2.0/docs/buession-httpclient/com/buession/httpclient/core/Response.html)

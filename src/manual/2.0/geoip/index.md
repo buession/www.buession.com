@@ -7,7 +7,7 @@
 ---
 
 
-### **安装**
+### 安装
 
 ```xml
 <dependency>
@@ -22,7 +22,7 @@
 `geoip` 在基于 `maxmind geoip2` 的基础上进行了二次封装，可以根据 IP（字符串形式的 IP，如：114.114.114.114、2001:0DB8:0000:0023:0008:0800:200C:417A ，IPV4 的数字表示：3739974408，java `InetAddress`）获取其 IP 地址的国家信息、城市信息、位置信息。
 
 
-### **获取国家信息**
+### 获取国家信息
 
 ```java
 import com.buession.geoip.model.Country;
@@ -37,7 +37,7 @@ Country country = resolver.country(3739974408L); // 3739974408L => 222.235.123.8
 ```
 
 
-### **获取城市信息**
+### 获取城市信息
 
 ```java
 import com.buession.geoip.model.Country;
@@ -52,7 +52,7 @@ District district = resolver.district(3739974408L); // 3739974408L => 222.235.12
 ```
 
 
-### **获取位置信息**
+### 获取位置信息
 
 位置信息中包括了该 IP 比较全面的信息，包括：城市信息、国家信息、洲信息、经纬度、机构信息、时区等。
 
@@ -69,12 +69,12 @@ Location location = resolver.location(3739974408L); // 3739974408L => 222.235.12
 ```
 
 
-### **缓存**
+### 缓存
 
 为了提高数据的处理能力，可以将获取过的数据缓存起来，下次获取同一 IP 信息时，可以直接从缓存中返回。您可以通过 `DatabaseResolver` 构造函数中的参数 `cache` 设置为 `com.maxmind.db.NodeCache` 的实现类即可，或直接使用类 `CacheDatabaseResolver`解析。我们默认使用 `maxmind` 内置的 `CHMCache` 来实现缓存，它是基于 `ConcurrentHashMap` 的内存缓存。
 
 
-### **Resolver 的 Spring Factory Bean**
+### Resolver 的 Spring Factory Bean
 
 我们内置了 geoip 的 `Resolver` spring factory bean 类 `GeoIPResolverFactoryBean`，您可以通过它在您的 spring 项目中，初始化 `Resolver` 的实现类为 spring bean 对象。
 
@@ -90,9 +90,9 @@ Location location = resolver.location(3739974408L); // 3739974408L => 222.235.12
 2. `enableCache` 可以控制是否缓存。
 
 
-### **关于 IP 库**
+### 关于 IP 库
 
 `buession-geoip` 中包含了 `maxmind` 免费的 IP 所属城市和国家的库。由于在 jar 包中该数据库无法做到及时更新，在实际应用中，我们建议您从 `maxmind` 官网下载 IP 方法您的应用中，通过 `DatabaseResolver` 的构造函数指定 IP 库路径，这么做的好处是：在您的应用程序中，可以去保证 IP 库是更新的。
 
 
-## [API 参考手册>>](/manual/2.0/docs/buession-geoip/)
+### [API 参考手册>>](/manual/2.0/docs/buession-geoip/)

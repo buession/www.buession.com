@@ -6,7 +6,7 @@
 数组、Map、集合的工具类
 
 
-### **数组**
+### 数组
 
 数组工具类 `Arrays` 继承自 `org.apache.commons.lang3.ArrayUtils` 封装了元素是否存在检测、元素索引位置获取、拼接成字符串、转换为 `List`、`Set` 以及字符串类型的数组、数组合并、数组元素操作等方法。
 
@@ -104,7 +104,7 @@ String[] result = Arrays.map(array, String.class, fn);
 第二个参数为数组元素类型，第三个参数为 `java.util.function.Function` 的实现
 
 
-### **Lists**
+### Lists
 
 List 工具类 `Lists` 实现了将元素拼接成字符串、转换为 Set 操作。
 
@@ -146,7 +146,7 @@ Set<Integer> set = Lists.toSet(list);
 ```
 
 
-### **Sets**
+### Sets
 
 Sett 工具类 `Sets` 实现了将元素拼接成字符串、转换为 List 操作。
 
@@ -188,7 +188,7 @@ List<Integer> list = Sets.toList(set);
 ```
 
 
-### **Maps**
+### Maps
 
 Map 工具类 `Maps` 实现了对 key 和 value 进行操作，实现了将 value 转换为 List 和 Set。
 
@@ -229,4 +229,4 @@ Set<T> set = Maps.toSet(maps);
 ```
 
 
-## [API 参考手册>>](/manual/2.0/docs/buession-core/com/buession/core/collect/package-summary.html)
+### [API 参考手册>>](/manual/2.0/docs/buession-core/com/buession/core/collect/package-summary.html)

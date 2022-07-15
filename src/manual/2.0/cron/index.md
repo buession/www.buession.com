@@ -7,7 +7,7 @@
 ---
 
 
-### **安装**
+### 安装
 
 ```xml
 <dependency>
@@ -24,4 +24,4 @@
 且在今后的版本中，该模块可能会被废弃。
 
 
-## [API 参考手册>>](/manual/2.0/docs/buession-cron/)
+### [API 参考手册>>](/manual/2.0/docs/buession-cron/)

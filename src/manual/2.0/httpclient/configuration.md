@@ -7,7 +7,7 @@
 您可以通过连接配置类 `Configuration` 配置 `apache httpcomponents` 和 `okhttp3` 的链接配置属性，`buession-httpclient` 内部会自动将 `Configuration` 的配置信息，转换为 `apache httpcomponents` 或 `okhttp3` 的配置信息。
 
 
-### **配置属性说明**
+### 配置属性说明
 
 
 |  属性名称             | 数据类型  | apache httpcomponents 对应配置    | okhttp3 对应配置       | 默认值      | 说明                    |
@@ -27,4 +27,4 @@
 |  normalizeUri      | boolean      | normalizeUri         | --    | --       | 是否标准化 URI      |
 
 
-## [API 参考手册>>](/manual/2.0/docs/docs/buession-httpclient/com/buession/httpclient/core/Configuration.html)
+### [API 参考手册>>](/manual/2.0/docs/docs/buession-httpclient/com/buession/httpclient/core/Configuration.html)

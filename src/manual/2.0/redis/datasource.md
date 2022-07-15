@@ -40,7 +40,7 @@ redis.password=passwd
 ```
 
 
-### **连接池**
+### 连接池
 
 通过连接池管理 redis 连接，能够大大的提高效率和节约资源的使用。jedis 和 lettuce 均使用 `apache commons-pool2` 来创建和维护连接池。但是，在 jedis 中，以 `JedisPoolConfig` 和 `ConnectionPoolConfig` 来管理单例模式连接池、哨兵模式连接池和集群模式连接池；为了简化配置，我们定义了 `com.buession.redis.core.PoolConfig` 来统一维护各种模式的连接池配置，然后在各 `DataSource` 中转换为原生的连接池配置，极大的简化了学习和替换成本。
 
@@ -72,4 +72,4 @@ redis.password=passwd
 | maxIdle      | int    | GenericObjectPoolConfig.DEFAULT_MAX_IDLE  | 最大空闲连接数 |
 
 
-## [API 参考手册>>](/manual/2.0/docs/buession-redis/com/buession/redis/client/connection/datasource/package-summary.html)
+### [API 参考手册>>](/manual/2.0/docs/buession-redis/com/buession/redis/client/connection/datasource/package-summary.html)

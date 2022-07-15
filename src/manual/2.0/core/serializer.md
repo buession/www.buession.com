@@ -9,7 +9,7 @@
 您可以通过该 API，实现将对象序列化成二进制或 JSON 字符串；或将二进制、JSON 字符串反序列化为对象。
 
 
-### **序列化、反序列化类**
+### 序列化、反序列化类
 
 
 |  类   | 说明  |
@@ -28,4 +28,4 @@
 6. `com.buession.core.serializer.type.TypeReference` 是某类型的一个指向或者引用，用于屏蔽 fastjson、gson、jackson 中通过 JDK `Type` 指定反序列化的类型；在 fastjson、gson 中是直接指定 `Type`，在 jackson 中是通过 `com.fasterxml.jackson.core.type.TypeReference` 类返回
 
 
-## [API 参考手册>>](/manual/2.0/docs/buession-core/com/buession/core/serializer/package-summary.html)
+### [API 参考手册>>](/manual/2.0/docs/buession-core/com/buession/core/serializer/package-summary.html)

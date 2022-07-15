@@ -7,7 +7,7 @@
 ---
 
 
-### **安装**
+### 安装
 
 ```xml
 <dependency>
@@ -20,4 +20,4 @@
 该模块无实际意义，将在今后的版本中会删除掉。
 
 
-## [API 参考手册>>](/manual/2.0/docs/buession-session/)
+### [API 参考手册>>](/manual/2.0/docs/buession-session/)

@@ -7,7 +7,7 @@
 `buession-httpclient` 提供了和 HTTP 请求方式同名的方法 API，您可以很方便的通过提供的方法发起 HTTP 请求。
 
 
-#### **示例：**
+#### 示例：
 
 ```java
 import com.buession.httpclient.HttpClient;
@@ -97,7 +97,7 @@ Response response = httpClient.put("https://www.buession.com/", requestBody);
 不同的 `RequestBody`，决定了我们以什么样的 `Content-Type` 提交数据，`buession-httpclient` 中提供了大量的内置 `RequestBody`。
 
 
-### **RequestBody**
+### RequestBody
 
 
 |  RequestBody                        | Content-Type                         | 说明                     |
@@ -114,4 +114,4 @@ Response response = httpClient.put("https://www.buession.com/", requestBody);
 |  XmlRawRequestBody                  | text/xml                             | XML 请求体               |
 
 
-## [API 参考手册>>](/manual/2.0/docs/buession-httpclient/com/buession/httpclient/HttpClient.html)
+### [API 参考手册>>](/manual/2.0/docs/buession-httpclient/com/buession/httpclient/HttpClient.html)

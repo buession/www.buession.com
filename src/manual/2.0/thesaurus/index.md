@@ -7,7 +7,7 @@
 ---
 
 
-### **安装**
+### 安装
 
 ```xml
 <dependency>
@@ -32,4 +32,4 @@ Set<Word> words parser.parse("搜谱拼音词条文件路径");
 ```
 
 
-## [API 参考手册>>](/manual/2.0/docs/buession-thesaurus/)
+### [API 参考手册>>](/manual/2.0/docs/buession-thesaurus/)

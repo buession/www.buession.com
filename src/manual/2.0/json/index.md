@@ -7,7 +7,7 @@
 ---
 
 
-### **安装**
+### 安装
 
 ```xml
 <dependency>
@@ -21,7 +21,7 @@
 封装了大量基于 `jackson` 的注解。
 
 
-### **注解**
+### 注解
 
 
 |  注解   | 说明  |
@@ -34,4 +34,4 @@
 | Sensitive  | 通过该注解可以实现数据的脱敏 |
 
 
-## [API 参考手册>>](/manual/2.0/docs/buession-json/)
+### [API 参考手册>>](/manual/2.0/docs/buession-json/)

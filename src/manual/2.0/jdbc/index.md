@@ -7,7 +7,7 @@ JDBC 通用 POJO 类定义，对 Hikari、Dbcp2、Druid 等配置和数据源的
 ---
 
 
-### **安装**
+### 安装
 
 ```xml
 <dependency>
@@ -21,4 +21,4 @@ JDBC 通用 POJO 类定义，对 Hikari、Dbcp2、Druid 等配置和数据源的
 通过提供的 API，您可以简化对 `DBCP2`、`Druid`、`Hikari`、`Tomcat` 数据源的初始化，该类库基本不单独使用。
 
 
-## [API 参考手册>>](/manual/2.0/docs/buession-jdbc/)
+### [API 参考手册>>](/manual/2.0/docs/buession-jdbc/)
