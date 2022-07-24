@@ -1,7 +1,7 @@
 # YDoc
 ![logo](ydoc/images/logo.png)
 
-* [主页](https://wwww.buession.com/)
+* [主页](https://www.buession.com/)
 * [文档](/docs/quickstart.md)
 * [参考手册](/manual/index.md)
 * [技术支持](/support.html)

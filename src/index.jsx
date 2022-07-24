@@ -1,15 +1,15 @@
 ---
 banner:
-  name: '基于各开源框架的二次开发和封装。'
-  desc: '基于各开源框架的二次开发和封装。'
-  btns: 
+  name: '一款基于各开源框架的二次开发和封装的框架'
+  desc: '封装日常常用功能和对同类框架进行上层解耦封装。'
+  btns:
     - { name: '开 始', href: '/docs/quickstart.html', primary: true }
     - { name: 'Github >', href: 'https://github.com/buession/buessionframework' }
   caption: '当前版本: v2.0.1'
 features: 
   - { name: '优雅', desc: '经过精雕细琢，我们带给大家一个精心设计的、标准的、高内聚低耦合的通用类库' }
   - { name: '灵活', desc: '非重复造车轮，我们是整合市面上开源的类库，以标准的接口暴露给上层用户，用户可替换或自行封装同类组件。在此基础上，封装了大量的常用的类库。' }
-  - { name: '简洁', desc: '减少学习成本' }
+  - { name: '易用', desc: '开箱即用，API 基本统一，学习成本低' }
   - { name: '开源', desc: '作为开源项目，我们不断提高代码质量和完善文档' }
 
 footer:
