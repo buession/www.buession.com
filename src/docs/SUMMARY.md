@@ -14,4 +14,6 @@
   * [环境要求](requirement.md)
   * [安装及使用](installation.md)
 
-### 下一步计划(plan.md)
+### 下一步计划
+
+* [下一步计划](plan.md)
