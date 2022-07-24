@@ -2,9 +2,7 @@
 > **TIP**
 >> 官方指南假设您已了解"JAVA"方面的相关知识。
 
-Buession Framework 是基于 springfrawork、jsckson、jedis、apache httpcomponents、okhttp3 等等众多的优秀的三方工具的标准化的、统一的类库的二次封装。
-
-同时，提供了众多常用的类库、方法、注解。
+Buession Framework 它是日常工作中常见的通用技术需求二次封装，提供了众多常用的类库、方法、注解；同时基于 springfrawork、jsckson、jedis、apache httpcomponents、okhttp3 等等众多的优秀的三方工具的标准化的、统一的类库的上层封装，简化框架切换带来的成本。
 
 Buession Framework 还在引用三方类库时，确保了版本的一致性，避免在不用三方类库引用的同一个三方类库版本不一致的情况。
 
