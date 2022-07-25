@@ -51,4 +51,4 @@ Map<String, User> data = redisTemplate.hGetAllObject("user", "1", new TypeRefere
 目前，`buession-redis` 仅支持 jedis，不支持 lettuce，我们预计会在下个版本或者下下个版本（即：2.1 或者 2.2）中计划加入。其实，之前尝试过，但由于两者 API 差异性和使用方式太大，没法很好的做到统一化，就暂时放弃了。
 
 
-### [API 参考手册>>](/manual/2.0/docs/buession-redis/)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-redis/2.0.2/)

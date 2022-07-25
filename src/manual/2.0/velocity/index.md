@@ -20,4 +20,4 @@ spring mvc 不再支持 velocity，这里主要是把原来 spring mvc 中关于
 该类库，基本照搬了 springframework 集成 velocity 的代码和逻辑。
 
 
-### [API 参考手册>>](/manual/2.0/docs/buession-velocity/)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-velocity/2.0.2/)

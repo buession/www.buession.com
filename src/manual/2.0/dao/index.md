@@ -26,7 +26,7 @@
 
 ### Dao 接口
 
-接口定义，可见：[https://www.buession.com/manual/2.0/docs/buession-dao/com/buession/dao/Dao.html](/manual/2.0/docs/buession-dao/com/buession/dao/Dao.html)
+接口定义，可见：[https://javadoc.io/static/com.buession/buession-dao/2.0.2/com/buession/dao/Dao.html](https://javadoc.io/static/com.buession/buession-dao/2.0.2/com/buession/dao/Dao.html)
 
 ```java
 public interface Dao<P, E> {
@@ -54,4 +54,4 @@ Buession Framework 扩展 MyBatis 的文档。
 Buession Framework 扩展 spring-data-mongodb 的文档。
 
 
-### [API 参考手册>>](/manual/2.0/docs/buession-dao/)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-dao/2.0.2/)

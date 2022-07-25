@@ -32,4 +32,4 @@ String ip = InetAddressUtis.long2ip(2130706433L); // 127.0.0.1
 URI 类或 URIBuilder 类，实现了 url 字符串的构建，详细查看 API 手册。
 
 
-### [API 参考手册>>](/manual/2.0/docs/buession-net/)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-net/2.0.2/)

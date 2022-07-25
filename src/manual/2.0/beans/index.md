@@ -103,4 +103,4 @@ Map<String, Object> result = BeanUtils.toMap(bean)
 ```
 
 
-### [API 参考手册>>](/manual/2.0/docs/buession-beans/)
+### [API 参考手册>>](https://javadoc.io/doc/com.buession/buession-beans/2.0.2/index.html)

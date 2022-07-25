@@ -127,4 +127,4 @@ Response response = httpClient.post("https://www.buession.com/");
 目前，`buession-httpclient` 仅支持同步，不支持异步。我们会在下一个小版本（即：2.1） 中，集成 `apache httpcomponents` 切换为 `okhttp3` 的异步 http 请求。
 
 
-### [API 参考手册>>](/manual/2.0/docs/buession-httpclient/)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-httpclient/2.0.2/)

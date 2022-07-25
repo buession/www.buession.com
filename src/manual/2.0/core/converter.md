@@ -129,4 +129,4 @@ propertyMapper.form(source::getId).to(target:setId)
 ```
 
 
-### [API 参考手册>>](/manual/2.0/docs/buession-core/com/buession/core/converter/package-summary.html)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-core/2.0.2/com/buession/core/converter/package-summary.html)

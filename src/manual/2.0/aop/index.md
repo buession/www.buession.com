@@ -18,4 +18,4 @@ AOP 封装，方便实现自定义注解
 ```
 
 
-### [API 参考手册>>](/manual/2.0/docs/buession-aop/)
+### [API 参考手册>>](https://javadoc.io/doc/com.buession/buession-aop/2.0.2/index.html)

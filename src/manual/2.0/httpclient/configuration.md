@@ -27,4 +27,4 @@
 |  normalizeUri      | boolean      | normalizeUri         | --    | --       | 是否标准化 URI      |
 
 
-### [API 参考手册>>](/manual/2.0/docs/docs/buession-httpclient/com/buession/httpclient/core/Configuration.html)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-httpclient/2.0.2/com/buession/httpclient/core/Configuration.html)

@@ -72,4 +72,4 @@ redis.password=passwd
 | maxIdle      | int    | GenericObjectPoolConfig.DEFAULT_MAX_IDLE  | 最大空闲连接数 |
 
 
-### [API 参考手册>>](/manual/2.0/docs/buession-redis/com/buession/redis/client/connection/datasource/package-summary.html)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-redis/2.0.2/com/buession/redis/client/connection/datasource/package-summary.html)
