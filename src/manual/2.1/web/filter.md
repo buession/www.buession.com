@@ -13,7 +13,6 @@ servlet 包位于 `com.buession.web.servlet.filter`，webflux 包位于 `com.bue
 
 |  过滤器                | 说明                                                                               |
 |  ----                  | ----                                                                             |
-| MobileFilter           | 当前请求是否为移动设备                                                               |
 | PoweredByFilter        | Powered By 过滤器                                                                  |
 | PrintUrlFilter         | 打印当前请求 URL 过滤器                                                             |
 | ResponseHeaderFilter   | 响应头过滤器，设置响应头                                                             |
