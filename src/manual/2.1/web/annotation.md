@@ -48,7 +48,7 @@ public class TestController {
 }
 ```
 
-您也可以指定获取用户真实 IP 的请求头列表
+您也可以指定获取用户真实 IP 的请求头列表，若未指定则使用 `RequestUtils.getClientIp(request)` 方法获取，获取顺序参考：[RequestUtils.CLIENT_IP_HEADERS](https://javadoc.io/static/com.buession/buession-web/2.1.0/com/buession/web/http/request/RequestUtils.html#CLIENT_IP_HEADERS)
 
 ```java
 @Controller
@@ -70,6 +70,41 @@ public class TestController {
 	@RequestMapping(path = "/ip3")
 	@ResponseBody
 	public InetAddress ip3(@RequestClientIp(headerName = {"X-Real-Ip", "X-User-Real-Ip"}) InetAddress ip, ServerHttpResponse response){
+		return ip;
+	}
+
+}
+```
+
+
+#### 设置页面缓存
+
+```java
+@Controller
+@RequestMapping(path = "/test")
+public class TestController {
+
+	@RequestMapping(path = "/cache")
+	@HttpCache(expires = "5")
+	@ResponseBody
+	public String cache(@RequestClientIp String ip, ServerHttpResponse response){
+		return ip;
+	}
+
+}
+```
+
+以上，会自动计算 `Cache-Control` 和 `pragma` 的值。当然，您也可以手动指定。
+
+```java
+@Controller
+@RequestMapping(path = "/test")
+public class TestController {
+
+	@RequestMapping(path = "/cache")
+	@HttpCache(expires = "5", cacheControl="public, max-age=5")
+	@ResponseBody
+	public String cache(@RequestClientIp String ip, ServerHttpResponse response){
 		return ip;
 	}
 
