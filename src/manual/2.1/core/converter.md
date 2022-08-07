@@ -115,7 +115,7 @@ public interface Mapper<S, T> {
 }
 ```
 
-我们还可以使用工具类 `com.buession.core.converter.mapper.PropertyMapper` 将值从提供的源映射到目标，此方法来拷贝并简单修改于：`springboot` 中的 `org.springframework.boot.context.properties.PropertyMapper`，和原生 `springboot` 中的用法一样。
+我们还可以使用工具类 `com.buession.core.converter.mapper.PropertyMapper` 将值从提供的源映射到目标，此方法来拷贝并简单修改于：`springboot` 中的 `org.springframework.boot.context.properties.PropertyMapper`，和原生 `springboot` 中的用法一样；并在此基础上增加了方法 `alwaysApplyingWhenHasText()`，用于判断映射源是否为 `null` 或者是否含有字符串。
 
 ```java
 import com.buession.core.converter.mapper.PropertyMapper;
@@ -125,6 +125,10 @@ User target = new User();
 
 PropertyMapper propertyMapper = PropertyMapper.get().alwaysApplyingWhenNonNull();
 propertyMapper.form(source::getId).to(target:setId)
+// null
+
+PropertyMapper propertyMapper = PropertyMapper.get().alwaysApplyingWhenHasText();
+propertyMapper.form(source::getUsername).to(target:setUsername)
 // null
 ```
 
