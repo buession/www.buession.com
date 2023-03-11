@@ -95,4 +95,4 @@ Location location = resolver.location(3739974408L); // 3739974408L => 222.235.12
 `buession-geoip` 中包含了 `maxmind` 免费的 IP 所属城市和国家的库。由于在 jar 包中该数据库无法做到及时更新，在实际应用中，我们建议您从 `maxmind` 官网下载 IP 方法您的应用中，通过 `DatabaseResolver` 的构造函数指定 IP 库路径，这么做的好处是：在您的应用程序中，可以去保证 IP 库是更新的。
 
 
-### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-geoip/2.1.0/)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-geoip/2.2.0/)

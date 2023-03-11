@@ -34,4 +34,4 @@
 | Sensitive  | 通过该注解可以实现数据的脱敏 |
 
 
-### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-json/2.1.0/)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-json/2.2.0/)

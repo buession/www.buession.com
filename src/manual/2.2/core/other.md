@@ -15,8 +15,8 @@
 import com.buession.core.Framework;
 import com.buession.core.BuesssionFrameworkVersion;
 
-BuesssionFrameworkVersion.getVersion(); // 2.1.0
-Framework.VERSION; // 2.1.0
+BuesssionFrameworkVersion.getVersion(); // 2.2.0
+Framework.VERSION; // 2.2.0
 ```
 
 获取 Buession Framework 框架名称：

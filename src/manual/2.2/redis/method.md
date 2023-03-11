@@ -38,7 +38,7 @@ redisTemplate.afterPropertiesSet();
 User user = redisTemplate.lIndexObject("user", 1, User.class);
 ```
 
-序列化和反序列化，基于 [`buession-core` 序列化和反序列化](/manual/2.1/core/serializer.html) 扩展而来，序列化或反序列化出错时会直接返回 null，而忽略异常，默认使用 `com.buession.redis.serializer.JacksonJsonSerializer` 序列化为 JSON。
+序列化和反序列化，基于 [`buession-core` 序列化和反序列化](/manual/2.2/core/serializer.html) 扩展而来，序列化或反序列化出错时会直接返回 null，而忽略异常，默认使用 `com.buession.redis.serializer.JacksonJsonSerializer` 序列化为 JSON。
 
 
-### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-redis/2.1.0/com/buession/redis/core/command/package-summary.html)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-redis/2.2.0/com/buession/redis/core/command/package-summary.html)

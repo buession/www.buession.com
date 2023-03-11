@@ -24,4 +24,4 @@
 且在今后的版本中，该模块可能会被废弃。
 
 
-### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-cron/2.1.0/)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-cron/2.2.0/)

@@ -114,4 +114,4 @@ Response response = httpClient.put("https://www.buession.com/", requestBody);
 |  XmlRawRequestBody                  | text/xml                             | XML 请求体               |
 
 
-### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-httpclient/2.1.0/com/buession/httpclient/HttpClient.html)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-httpclient/2.2.0/com/buession/httpclient/HttpClient.html)

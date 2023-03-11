@@ -28,4 +28,4 @@ DateTime.microtime();
 该方法参考 PHP 的 microtime 函数而来。
 
 
-### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-core/2.1.0/com/buession/core/datetime/package-summary.html)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-core/2.2.0/com/buession/core/datetime/package-summary.html)

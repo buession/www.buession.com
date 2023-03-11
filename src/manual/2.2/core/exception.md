@@ -21,4 +21,4 @@
 | SerializationException       | 序列化异常                           |
 
 
-### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-core/2.1.0/com/buession/core/exception/package-summary.html)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-core/2.2.0/com/buession/core/exception/package-summary.html)

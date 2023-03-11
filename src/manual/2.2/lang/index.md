@@ -18,4 +18,4 @@
 ```
 
 
-### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-lang/2.1.0/)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-lang/2.2.0/)

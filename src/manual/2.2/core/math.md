@@ -51,4 +51,4 @@ long result = Math.rangeValue(value, min, max);
 ```
 
 
-### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-core/2.1.0/com/buession/core/math/package-summary.html)
+### [API 参考手册>>](https://javadoc.io/static/com.buession/buession-core/2.2.0/com/buession/core/math/package-summary.html)
