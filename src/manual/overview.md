@@ -5,5 +5,6 @@
 
 |  版本   | 手册  |
 |  ----  | ----  |
-| 2.0.x  | [API 手册](2.0/index.html) |
+| 2.2.x  | [API 手册](2.2/index.html) |
 | 2.1.x  | [API 手册](2.1/index.html) |
+| 2.0.x  | [API 手册](2.0/index.html) |
