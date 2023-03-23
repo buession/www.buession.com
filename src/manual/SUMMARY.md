@@ -30,6 +30,8 @@
       * [MongoDB](2.2/dao/mongodb.md)
     * [buession-geoip](2.2/geoip/index.md)
       * [安装](2.2/geoip/index.md#安装)
+    * [buession-git](2.2/git/index.md)
+      * [安装](2.2/git/index.md#安装)
     * [buession-httpclient](2.2/httpclient/index.md)
       * [安装](2.2/httpclient/index.md#安装)
       * [连接配置](2.2/httpclient/configuration.md)

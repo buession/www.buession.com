@@ -12,6 +12,7 @@ Buession Framework API 包含以下目录：
 | buession-cron        | [使用帮助](cron/index.md)       | [API 手册](https://javadoc.io/static/com.buession/buession-cron/2.1.0/)       |
 | buession-dao         | [使用帮助](dao/index.md)        | [API 手册](https://javadoc.io/static/com.buession/buession-dao/2.1.0/)        |
 | buession-geoip       | [使用帮助](geoip/index.md)      | [API 手册](https://javadoc.io/static/com.buession/buession-geoip/2.1.0/)      |
+| buession-git         | [使用帮助](git/index.md)        | [API 手册](https://javadoc.io/static/com.buession/buession-git/2.1.0/)        |
 | buession-httpclient  | [使用帮助](httpclient/index.md) | [API 手册](https://javadoc.io/static/com.buession/buession-httpclient/2.1.0/) |
 | buession-io          | [使用帮助](io/index.md)         | [API 手册](https://javadoc.io/static/com.buession/buession-io/2.1.0/)         |
 | buession-jdbc        | [使用帮助](jdbc/index.md)       | [API 手册](https://javadoc.io/static/com.buession/buession-jdbc/2.1.0/)       |
