@@ -66,6 +66,8 @@
       * [安装](2.3/web/index.md#安装)
       * [注解](2.3/web/annotation.md)
       * [过滤器](2.3/web/filter.md)
+      * [Response](2.3/web/response.md)
+      * [Pagination](2.3/web/pagination.md)
       * [RESTFUL](2.3/web/restful.md)
       * [工具](2.3/web/utils.md)
   * [2.2.x](2.2/index.md)
