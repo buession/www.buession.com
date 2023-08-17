@@ -48,7 +48,7 @@ public class TestController {
 }
 ```
 
-您也可以指定获取用户真实 IP 的请求头列表，若未指定则使用 `RequestUtils.getClientIp(request)` 方法获取，获取顺序参考：[RequestUtils.CLIENT_IP_HEADERS](https://javadoc.io/static/com.buession/buession-web/2.2.0/com/buession/web/http/request/RequestUtils.html#CLIENT_IP_HEADERS)
+您也可以指定获取用户真实 IP 的请求头列表，若未指定则使用 `RequestUtils.getClientIp(request)` 方法获取，获取顺序参考：[RequestUtils.CLIENT_IP_HEADERS](https://javadoc.io/static/com.buession/buession-web/2.3.0/com/buession/web/http/request/RequestUtils.html#CLIENT_IP_HEADERS)
 
 ```java
 @Controller

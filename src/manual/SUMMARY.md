@@ -13,6 +13,8 @@
       * [编码器](2.3/core/codec.md)
       * [收集器](2.3/core/collect.md)
       * [上下文](2.3/core/context.md)
+      * [配置器](2.3/core/configurer.md)
+      * [定制器](2.3/core/customizer.md)
       * [转换器](2.3/core/converter.md)
       * [日期时间](2.3/core/datetime.md)
       * [ID 生成器](2.3/core/id.md)
