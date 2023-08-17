@@ -7,7 +7,7 @@
 我们定义了 restful 返回数据类型中的分页对象。
 
 ```java
-public class Pagination extends com.buession.core.Pagination<Object> {
+public class Pagination {
 
 	/**
 	 * 默认每页大小
