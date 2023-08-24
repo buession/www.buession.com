@@ -19,6 +19,12 @@ ApacheHttpAsyncClient httpClient = new ApacheHttpAsyncClient();
 
 httpClient.get("https://www.baidu.com", new Callback() {
 
+	/**
+	 * 当 HTTP 请求成功完成并且服务器返回响应时调用此方法
+	 *
+	 * @param response
+	 * 		HTTP 响应
+	 */
 	@Override
 	public void completed(Response response){
 		for(Header header : response.getHeaders()){
@@ -26,11 +32,20 @@ httpClient.get("https://www.baidu.com", new Callback() {
 		}
 	}
 
+	/**
+	 * 当 HTTP 请求由于异常而失败时调用此方法
+	 *
+	 * @param ex
+	 * 		导致失败的异常。
+	 */
 	@Override
 	public void failed(Exception ex){
-		System.out.println("failed");
+		System.out.println("failed: " + ex.getMessage());
 	}
 
+	/**
+	 * 当 HTTP 请求在完成之前被取消时调用此方法
+	 */
 	@Override
 	public void cancelled(){
 		System.out.println("cancelled");
