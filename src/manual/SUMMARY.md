@@ -41,6 +41,7 @@
       * [连接管理器](2.3/httpclient/connectionmanager.md)
       * [响应](2.3/httpclient/response.md)
       * [方法](2.3/httpclient/method.md)
+      * [异步](2.3/httpclient/async.md)
       * [展望](2.3/httpclient/index.md#展望)
     * [buession-io](2.3/io/index.md)
       * [安装](2.3/io/index.md#安装)
