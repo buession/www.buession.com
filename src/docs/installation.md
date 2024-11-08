@@ -3,7 +3,7 @@
 
 ### Maven 中央仓库搜索
 * [https://mvnrepository.com/search?q=com.buession](https://mvnrepository.com/search?q=com.buession)
-* [https://search.maven.org/search?q=g:com.buession](https://search.maven.org/search?q=g:com.buession)
+* [https://central.sonatype.com/search?q=g:com.buession](https://central.sonatype.com/search?q=g:com.buession)
 
 ### 手动编译
 ```shell

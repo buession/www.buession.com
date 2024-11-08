@@ -21,15 +21,15 @@
 * ID 生成器
 * Manager 层注解
 
-### buession-cron
-* 对 quartz 的二次封装
-
 ### buession-dao
 * 对 mybatis、spring-data-mongo 常用方法（如：根据条件获取单条记录、根据主键获取单条记录、分页、根据条件删除数据、根据主键删除数据）进行了二次封装
 * 从代码层面上支持数据库一主多从实现读写分离，insert、update、delete 操作主库，select 操作从库
 
 ### buession-geoip
 * 对 com.maxmind.geoip2:geoip2 进行二次封装，实现支持根据 IP 地址获取所属 ISP、所属国家、所属城市等等信息
+
+### buession-git
+* 项目中 Git 信息解析
 
 ### buession-httpclient
 * 对 apache httpcomponents、okhttp3 进行封装，屏蔽了 apache httpcomponents 和 okhttp3 的不同技术细节
